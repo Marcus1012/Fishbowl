@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ole-xl-2KZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scanner-->
+        <scene sceneID="GWx-9N-7ry">
+            <objects>
+                <viewController storyboardIdentifier="barcodeScanner" title="Scanner" id="8g8-Uh-2t1" customClass="ScannerViewController" customModule="Fishbowl_GO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eAK-2k-9H2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yuy-Eb-fnB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PvJ-b9-BTf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scanning..." id="zfI-bm-0xO">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="9s0-oa-CeL">
+                            <connections>
+                                <action selector="btnCancel:" destination="8g8-Uh-2t1" id="twV-5H-GwB"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="1 of 1" id="8sW-3k-Mqa"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="captureCountButtonItem" destination="8sW-3k-Mqa" id="CL6-5q-URp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJb-FB-mtj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10174" y="-3162"/>
+        </scene>
+        <!--Scanner-->
+        <scene sceneID="sN5-0E-c2h">
+            <objects>
+                <navigationController storyboardIdentifier="Scanner" title="Scanner" automaticallyAdjustsScrollViewInsets="NO" id="Ole-xl-2KZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kxt-sH-whw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8g8-Uh-2t1" kind="relationship" relationship="rootViewController" id="Z6k-Y8-04p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Qg-bl-sm7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11036" y="-3162"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.2461538462" green="0.2461538462" blue="0.2461538462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

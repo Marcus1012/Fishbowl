@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="NMu-Pl-Ybg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShipHeaderView" customModule="Fishbowl_GO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ORDER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNQ-Za-Z7t">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="s9B-xa-l4p"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCHEDULED" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRy-hn-TgV">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="111" id="OhR-6I-NAP"/>
+                        <constraint firstAttribute="height" constant="21" id="nZx-RJ-7PG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARRIER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbH-MI-NpZ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="0yF-h1-6jA"/>
+                        <constraint firstAttribute="width" constant="105" id="okN-Nm-PnH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.84193710295957114" green="0.92980490455298159" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TbH-MI-NpZ" secondAttribute="bottom" constant="4" id="Koa-IS-CJ6"/>
+                <constraint firstItem="TbH-MI-NpZ" firstAttribute="leading" secondItem="qNQ-Za-Z7t" secondAttribute="trailing" constant="5" id="QGr-uo-vDF"/>
+                <constraint firstAttribute="bottom" secondItem="qNQ-Za-Z7t" secondAttribute="bottom" constant="4" id="SLx-Fe-0uK"/>
+                <constraint firstAttribute="trailing" secondItem="nRy-hn-TgV" secondAttribute="trailing" constant="10" id="TGo-0R-l9I"/>
+                <constraint firstAttribute="bottom" secondItem="nRy-hn-TgV" secondAttribute="bottom" constant="4" id="a5k-qk-y56"/>
+                <constraint firstItem="qNQ-Za-Z7t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="sOu-qd-JaO"/>
+                <constraint firstItem="nRy-hn-TgV" firstAttribute="leading" secondItem="TbH-MI-NpZ" secondAttribute="trailing" constant="2" id="sQN-NH-4Sg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="37" y="-254"/>
+        </view>
+    </objects>
+</document>

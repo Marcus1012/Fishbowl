@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fishbowl GO-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Fishbowl GO" id="BYZ-38-t0r" customClass="ViewController" customModule="Fishbowl_GO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-intro-blur-750x1334.png" translatesAutoresizingMaskIntoConstraints="NO" id="HJD-9d-5ty">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Server address" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Nf0-w9-7YC">
+                                <rect key="frame" x="75" y="86" width="225" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="O5L-s8-uel"/>
+                                    <constraint firstAttribute="width" constant="225" id="ZWH-kK-8Cv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Port" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qRZ-aB-RGC">
+                                <rect key="frame" x="75" y="124" width="225" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="0vk-56-pv8"/>
+                                    <constraint firstAttribute="height" constant="30" id="1aN-1H-03o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                            </textField>
+                            <navigationBar alpha="0.84999999999999998" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="b8F-ev-a3O">
+                                <rect key="frame" x="-4" y="20" width="383" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gDh-ZP-bpi"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="Fishbowl GO" id="aPg-en-fce"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ntn-Xf-7Q9">
+                                <rect key="frame" x="75" y="162" width="225" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="ddD-7o-AYB"/>
+                                    <constraint firstAttribute="height" constant="30" id="wDp-mm-iSX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="clu-Ix-tJi">
+                                <rect key="frame" x="75" y="200" width="225" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="Vcn-BE-iec"/>
+                                    <constraint firstAttribute="height" constant="30" id="dfI-qg-cBf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hna-vW-vLm">
+                                <rect key="frame" x="127" y="275" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="73y-tl-QDf"/>
+                                    <constraint firstAttribute="height" constant="30" id="zyM-bE-LJl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFishbowlLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="79h-hA-ZDb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oj7-aH-nII" customClass="CheckBox" customModule="Fishbowl_GO" customModuleProvider="target">
+                                <rect key="frame" x="129" y="243" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="NRF-MG-KnC"/>
+                                    <constraint firstAttribute="width" constant="20" id="iom-NZ-Nh3"/>
+                                </constraints>
+                                <state key="normal" title="[ ]" image="checkbox-icon-white-unchecked">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28b-aq-yas">
+                                <rect key="frame" x="151" y="238" width="129" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ezD-cN-HUT"/>
+                                    <constraint firstAttribute="width" constant="129" id="iXU-gj-xDW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Remember my login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRememberLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p8W-MB-SZg"/>
+                                </connections>
+                            </button>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n6P-j7-tfB">
+                                <rect key="frame" x="163" y="578" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="1vL-Sn-L2T"/>
+                                    <constraint firstAttribute="width" constant="49" id="mGL-N4-YWd"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="switchDebugChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="EI9-an-Sgc"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HJD-9d-5ty" secondAttribute="bottom" id="0yH-QR-6E9"/>
+                            <constraint firstItem="Nf0-w9-7YC" firstAttribute="top" secondItem="b8F-ev-a3O" secondAttribute="bottom" constant="22" id="9vO-p6-dtC"/>
+                            <constraint firstItem="Nf0-w9-7YC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AeW-t9-0k4"/>
+                            <constraint firstItem="b8F-ev-a3O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BfM-Qj-RK2"/>
+                            <constraint firstItem="28b-aq-yas" firstAttribute="top" secondItem="clu-Ix-tJi" secondAttribute="bottom" constant="8" id="Bhq-HX-DVZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HJD-9d-5ty" secondAttribute="trailing" constant="-20" id="CAm-Yf-PtT"/>
+                            <constraint firstItem="28b-aq-yas" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="27.5" id="CDG-nG-sAR"/>
+                            <constraint firstItem="n6P-j7-tfB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DqH-Ks-SzQ"/>
+                            <constraint firstItem="clu-Ix-tJi" firstAttribute="top" secondItem="ntn-Xf-7Q9" secondAttribute="bottom" constant="8" id="E4K-nI-0ui"/>
+                            <constraint firstItem="ntn-Xf-7Q9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FDX-Ui-ccr"/>
+                            <constraint firstItem="HJD-9d-5ty" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="FyG-C5-TJO"/>
+                            <constraint firstItem="b8F-ev-a3O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="IMn-3W-ZR6"/>
+                            <constraint firstItem="Hna-vW-vLm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="J6t-6y-4Bg"/>
+                            <constraint firstItem="Hna-vW-vLm" firstAttribute="top" secondItem="clu-Ix-tJi" secondAttribute="bottom" constant="45" id="LSF-qC-a5g"/>
+                            <constraint firstItem="clu-Ix-tJi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MLe-9G-WYT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b8F-ev-a3O" secondAttribute="trailing" constant="-20" id="NzW-lv-usX"/>
+                            <constraint firstItem="qRZ-aB-RGC" firstAttribute="top" secondItem="Nf0-w9-7YC" secondAttribute="bottom" constant="8" id="Teb-vl-IDE"/>
+                            <constraint firstItem="Oj7-aH-nII" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-49" id="mFi-Nr-qT2"/>
+                            <constraint firstItem="qRZ-aB-RGC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mxu-PB-tbz"/>
+                            <constraint firstItem="n6P-j7-tfB" firstAttribute="top" secondItem="Hna-vW-vLm" secondAttribute="bottom" constant="273" id="n9f-4L-e8H"/>
+                            <constraint firstItem="HJD-9d-5ty" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="nHZ-H2-Xh6"/>
+                            <constraint firstItem="ntn-Xf-7Q9" firstAttribute="top" secondItem="qRZ-aB-RGC" secondAttribute="bottom" constant="8" id="qlU-fp-zEf"/>
+                            <constraint firstItem="Oj7-aH-nII" firstAttribute="top" secondItem="clu-Ix-tJi" secondAttribute="bottom" constant="13" id="zcf-lB-Tu2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnFishbowlLogin" destination="Hna-vW-vLm" id="8cd-bt-QN8"/>
+                        <outlet property="checkRememberLogin" destination="Oj7-aH-nII" id="x9h-We-Qhw"/>
+                        <outlet property="headerNavItem" destination="aPg-en-fce" id="Qz6-vW-VK3"/>
+                        <outlet property="host" destination="Nf0-w9-7YC" id="zzD-X2-ktt"/>
+                        <outlet property="navBar" destination="b8F-ev-a3O" id="Ut9-So-W0l"/>
+                        <outlet property="password" destination="clu-Ix-tJi" id="7mb-4A-ADS"/>
+                        <outlet property="port" destination="qRZ-aB-RGC" id="xXZ-XO-G7f"/>
+                        <outlet property="switchDebug" destination="n6P-j7-tfB" id="6ZU-jR-31H"/>
+                        <outlet property="username" destination="ntn-Xf-7Q9" id="VtB-xY-8Bo"/>
+                        <segue destination="dzf-IO-vYb" kind="show" identifier="connect_segue" id="psa-jj-Sbt"/>
+                        <segue destination="n05-Tt-baX" kind="presentation" identifier="segue_login_about" id="ymI-A5-1vb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232.80000000000001" y="26.53673163418291"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Bz4-hJ-Yas">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="Laf-JI-sNb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Djg-wE-MA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3100" y="711"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="Qth-8t-DCl">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" title="About" id="n05-Tt-baX" customClass="AboutViewController" customModule="Fishbowl_GO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6PG-LY-aWE"/>
+                        <viewControllerLayoutGuide type="bottom" id="M2O-sd-XLT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iDk-Ts-gfv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-intro-750x1334" translatesAutoresizingMaskIntoConstraints="NO" id="YWi-uS-WNs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLf-nI-gQY">
+                                <rect key="frame" x="16" y="341" width="343" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="KDK-8L-fvY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZp-oQ-Ndw">
+                                <rect key="frame" x="46" y="394" width="284" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="30y-nx-h4e"/>
+                                    <constraint firstAttribute="height" constant="30" id="WqM-dD-zCd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="View Online Demo...">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewOnlineDemo:" destination="n05-Tt-baX" eventType="touchUpInside" id="RPB-da-3bG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w65-jH-QFd">
+                                <rect key="frame" x="104" y="438" width="168" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Wih-dJ-WGL"/>
+                                    <constraint firstAttribute="width" constant="168" id="fwq-xh-KLR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Ok">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.32549019610000002" green="0.40000000000000002" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleShadowColor" red="0.32549019610000002" green="0.40000000000000002" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="focused">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.32549019610000002" green="0.40000000000000002" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnOk:" destination="n05-Tt-baX" eventType="touchUpInside" id="7VZ-fB-n5X"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fbgo_logo_vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QWJ-wd-lIH">
+                                <rect key="frame" x="38" y="174" width="300" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="UMD-Xv-SQ0"/>
+                                    <constraint firstAttribute="width" constant="300" id="cqj-Tg-lNK"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uuid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsA-Mz-q6e" userLabel="UUID">
+                                <rect key="frame" x="16" y="365" width="343" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="2N3-sb-i97"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMf-nI-k7q">
+                                <rect key="frame" x="16" y="592" width="343" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="0rP-li-kJh"/>
+                                </constraints>
+                                <state key="normal" title="Acknowledgements...">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GqA-Wm-BJ7" kind="popoverPresentation" popoverAnchorView="NMf-nI-k7q" id="taT-Q7-Nkf">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FLf-nI-gQY" firstAttribute="leading" secondItem="iDk-Ts-gfv" secondAttribute="leadingMargin" id="6Yu-fE-PdJ"/>
+                            <constraint firstItem="FLf-nI-gQY" firstAttribute="centerX" secondItem="iDk-Ts-gfv" secondAttribute="centerX" id="6d2-Sp-xKo"/>
+                            <constraint firstItem="M2O-sd-XLT" firstAttribute="top" secondItem="NMf-nI-k7q" secondAttribute="bottom" constant="8" id="DjD-Gc-PaI"/>
+                            <constraint firstItem="JsA-Mz-q6e" firstAttribute="leading" secondItem="iDk-Ts-gfv" secondAttribute="leadingMargin" id="DuM-PB-Xd6"/>
+                            <constraint firstItem="YWi-uS-WNs" firstAttribute="leading" secondItem="iDk-Ts-gfv" secondAttribute="leadingMargin" constant="-16" id="PaP-qx-9vS"/>
+                            <constraint firstItem="PZp-oQ-Ndw" firstAttribute="centerX" secondItem="iDk-Ts-gfv" secondAttribute="centerX" id="QSr-1A-czg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YWi-uS-WNs" secondAttribute="trailing" constant="-16" id="RKo-VZ-ELe"/>
+                            <constraint firstItem="NMf-nI-k7q" firstAttribute="trailing" secondItem="iDk-Ts-gfv" secondAttribute="trailingMargin" id="Twm-lE-EeV"/>
+                            <constraint firstItem="NMf-nI-k7q" firstAttribute="leading" secondItem="iDk-Ts-gfv" secondAttribute="leadingMargin" id="V8A-Gi-gRd"/>
+                            <constraint firstItem="FLf-nI-gQY" firstAttribute="top" secondItem="QWJ-wd-lIH" secondAttribute="bottom" constant="2" id="bYJ-4H-MWE"/>
+                            <constraint firstItem="QWJ-wd-lIH" firstAttribute="centerY" secondItem="iDk-Ts-gfv" secondAttribute="centerY" constant="-77" id="cHK-dh-gwX"/>
+                            <constraint firstItem="YWi-uS-WNs" firstAttribute="top" secondItem="iDk-Ts-gfv" secondAttribute="topMargin" id="k01-OH-PnC"/>
+                            <constraint firstItem="JsA-Mz-q6e" firstAttribute="trailing" secondItem="iDk-Ts-gfv" secondAttribute="trailingMargin" id="kTb-TD-Mhg"/>
+                            <constraint firstItem="JsA-Mz-q6e" firstAttribute="top" secondItem="QWJ-wd-lIH" secondAttribute="bottom" constant="26" id="kqI-Vw-FA8"/>
+                            <constraint firstItem="w65-jH-QFd" firstAttribute="centerX" secondItem="iDk-Ts-gfv" secondAttribute="centerX" id="oW0-en-pD2"/>
+                            <constraint firstItem="PZp-oQ-Ndw" firstAttribute="top" secondItem="FLf-nI-gQY" secondAttribute="bottom" constant="27" id="tI8-Za-XB6"/>
+                            <constraint firstItem="QWJ-wd-lIH" firstAttribute="centerX" secondItem="iDk-Ts-gfv" secondAttribute="centerX" id="wDz-D2-yPY"/>
+                            <constraint firstItem="FLf-nI-gQY" firstAttribute="trailing" secondItem="iDk-Ts-gfv" secondAttribute="trailingMargin" id="x6K-Jr-EXm"/>
+                            <constraint firstItem="M2O-sd-XLT" firstAttribute="top" secondItem="YWi-uS-WNs" secondAttribute="bottom" id="zKt-eI-f9r"/>
+                            <constraint firstItem="w65-jH-QFd" firstAttribute="top" secondItem="PZp-oQ-Ndw" secondAttribute="bottom" constant="14" id="zaA-7h-QFI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelUUID" destination="JsA-Mz-q6e" id="hrh-Yb-CJg"/>
+                        <outlet property="labelVersion" destination="FLf-nI-gQY" id="FJQ-LL-oOr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zrO-Ro-Irr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232.80000000000001" y="787.55622188905556"/>
+        </scene>
+        <!--Acknowledgements-->
+        <scene sceneID="c4f-Aa-PAV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Acknowledgements" id="GqA-Wm-BJ7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F43-jx-bjD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="233" y="1176"/>
+        </scene>
+        <!--Fishbowl GO Main Menu-->
+        <scene sceneID="Gn7-Z4-W6G">
+            <objects>
+                <viewController storyboardIdentifier="mainmenu" title="Fishbowl GO Main Menu" id="qBd-oH-3Zy" customClass="MainMenuViewController" customModule="Fishbowl_GO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7wa-uR-Cmx"/>
+                        <viewControllerLayoutGuide type="bottom" id="QFc-bU-4F4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kfi-Sf-MNs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-intro-750x1334" translatesAutoresizingMaskIntoConstraints="NO" id="yS7-Kl-3al">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENt-0y-R8j" customClass="BigGoButton" customModule="Fishbowl_GO" customModuleProvider="target">
+                                <rect key="frame" x="191" y="72" width="183" height="90"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="Gyg-Bu-eRk"/>
+                                    <constraint firstAttribute="height" constant="90" id="KHB-Mm-PP4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Pack" image="pack_50x50">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="roundRectColor">
+                                        <color key="value" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundRectCornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Drf-N5-EjC" kind="show" identifier="segue_packing" id="cOb-h3-WOd"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKl-TO-VO8" customClass="BigGoButton" customModule="Fishbowl_GO" customModuleProvider="target">
+                                <rect key="frame" x="1" y="168" width="184" height="90"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="9yZ-BJ-VYq"/>
+                                    <constraint firstAttribute="width" constant="184" id="YvS-G4-y9l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Ship" image="ship_50x50"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="roundRectColor">
+                                        <color key="value" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundRectCornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="a2Z-l3-wBD" kind="show" identifier="segue_shipping" id="V2j-5J-b0q"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwQ-60-5OW" customClass="BigGoButton" customModule="Fishbowl_GO" customModuleProvider="target">
+                                <rect key="frame" x="191" y="168" width="183" height="90"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="Geb-X6-rUV"/>
+                                    <constraint firstAttribute="height" constant="90" id="VbT-mo-LBy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Receive" image="receive_50x50"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="roundRectColor">
+                                        <color key="value" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundRectCornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="gH5-uy-5NH" kind="show" identifier="segue_receiving" id="BTv-Hs-X1Y"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWb-hm-SSj" customClass="BigGoButton" customModule="Fishbowl_GO" customModuleProvider="target">
+                                <rect key="frame" x="1" y="264" width="184" height="90"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="B9Y-yu-Zdb"/>
+                                    <constraint firstAttribute="height" constant="90" id="jha-7M-Yyp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Move" image="move_50x50"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="roundRectColor">
+                                        <color key="value" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundRectCornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="pJh-ma-FFr" kind="show" identifier="segue_move" id="cWR-Xe-xET"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPz-sV-e3W" customClass="BigGoButton" customModule="Fishbowl_GO" customModuleProvider="target">
+                                <rect key="frame" x="1" y="72" width="184" height="90"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="51h-lx-yv6"/>
+                                    <constraint firstAttribute="width" constant="184" id="mF8-bg-6v0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Pick" image="pick_50x50">
+                                    <color key="titleColor" red="1" green="0.99561672054417494" blue="0.9811221222305061" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="roundRectColor">
+                                        <color key="value" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundRectCornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="aDs-rt-dnZ" kind="show" identifier="segue_picking" id="hY9-au-Sjg"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urw-dO-OlB" customClass="BigGoButton" customModule="Fishbowl_GO" customModuleProvider="target">
+                                <rect key="frame" x="191" y="456" width="183" height="90"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="jDv-8t-QbZ"/>
+                                    <constraint firstAttribute="height" constant="90" id="zDI-qP-uUL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Work Order" image="work_order_50x50">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="roundRectColor">
+                                        <color key="value" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundRectCornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="DY4-1J-qMz" kind="show" identifier="segue_workorder" id="bga-rU-ZDO"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt7-3l-cgz" customClass="BigGoButton" customModule="Fishbowl_GO" customModuleProvider="target">
+                                <rect key="frame" x="191" y="360" width="183" height="90"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="OdI-PV-Kb2"/>
+                                    <constraint firstAttribute="height" constant="90" id="eb7-5I-r76"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Cycle" image="cycle_50x50"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="roundRectColor">
+                                        <color key="value" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundRectCornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="rD5-VH-57A" kind="show" identifier="segue_cycle" id="lzQ-xA-djw"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAZ-bD-giQ" customClass="BigGoButton" customModule="Fishbowl_GO" customModuleProvider="target">
+                                <rect key="frame" x="1" y="456" width="184" height="90"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="5pu-dO-XrV"/>
+                                    <constraint firstAttribute="width" constant="184" id="Bu7-Su-Knr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Part" image="part_50x50"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="roundRectColor">
+                                        <color key="value" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundRectCornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="RJh-IU-3DI" kind="show" identifier="segue_part" id="jv8-Fk-DBZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swT-pU-egr" customClass="BigGoButton" customModule="Fishbowl_GO" customModuleProvider="target">
+                                <rect key="frame" x="-3" y="552" width="378" height="90"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="378" id="bkK-vB-wBD"/>
+                                    <constraint firstAttribute="height" constant="90" id="nFo-7O-Lt1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Delivery" image="ship_50x50">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="roundRectColor">
+                                        <color key="value" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundRectCornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="cFf-fG-OXm" kind="show" identifier="segue_delivery" id="jce-YX-QKt"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGC-KZ-ky8" userLabel="Btn Add Inventory" customClass="BigGoButton" customModule="Fishbowl_GO" customModuleProvider="target">
+                                <rect key="frame" x="191" y="264" width="183" height="90"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="3w6-lc-dYP"/>
+                                    <constraint firstAttribute="width" constant="183" id="n6q-1E-GZf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Add Inventory" image="add_50x50">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="roundRectColor">
+                                        <color key="value" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundRectCornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="J4c-Kt-43M" kind="show" identifier="segue_add_inventory" id="xjA-S0-qi5"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZU-iO-37g" customClass="BigGoButton" customModule="Fishbowl_GO" customModuleProvider="target">
+                                <rect key="frame" x="1" y="360" width="184" height="90"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Wbm-fo-2dQ"/>
+                                    <constraint firstAttribute="width" constant="184" id="rxH-L0-P5a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Scrap" image="scrap_50x50">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="roundRectColor">
+                                        <color key="value" red="0.08235294118" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundRectCornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="2cf-UN-rK4" kind="show" identifier="segue_scrap" id="Sao-Up-itQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ENt-0y-R8j" firstAttribute="leading" secondItem="kfi-Sf-MNs" secondAttribute="leading" constant="191" id="0Cx-H5-JlI"/>
+                            <constraint firstItem="ENt-0y-R8j" firstAttribute="top" secondItem="7wa-uR-Cmx" secondAttribute="bottom" constant="8" id="34A-xh-T7s"/>
+                            <constraint firstItem="gt7-3l-cgz" firstAttribute="top" secondItem="7wa-uR-Cmx" secondAttribute="bottom" constant="296" id="3NH-pD-r0x"/>
+                            <constraint firstItem="QFc-bU-4F4" firstAttribute="top" secondItem="yS7-Kl-3al" secondAttribute="bottom" id="5my-um-6Qq"/>
+                            <constraint firstItem="swT-pU-egr" firstAttribute="top" secondItem="7wa-uR-Cmx" secondAttribute="bottom" constant="488" id="6EY-S2-0dN"/>
+                            <constraint firstItem="eWb-hm-SSj" firstAttribute="leading" secondItem="kfi-Sf-MNs" secondAttribute="leading" constant="1" id="7xU-25-vzV"/>
+                            <constraint firstItem="hGC-KZ-ky8" firstAttribute="top" secondItem="7wa-uR-Cmx" secondAttribute="bottom" constant="200" id="CT1-mX-zpa"/>
+                            <constraint firstItem="wZU-iO-37g" firstAttribute="top" secondItem="7wa-uR-Cmx" secondAttribute="bottom" constant="296" id="G7K-KE-YsT"/>
+                            <constraint firstItem="urw-dO-OlB" firstAttribute="leading" secondItem="kfi-Sf-MNs" secondAttribute="leading" constant="191" id="IbA-B9-RIz"/>
+                            <constraint firstItem="LAZ-bD-giQ" firstAttribute="top" secondItem="7wa-uR-Cmx" secondAttribute="bottom" constant="392" id="J01-E9-Lbw"/>
+                            <constraint firstItem="MKl-TO-VO8" firstAttribute="leading" secondItem="kfi-Sf-MNs" secondAttribute="leading" constant="1" id="Ne8-aG-IOU"/>
+                            <constraint firstItem="hGC-KZ-ky8" firstAttribute="leading" secondItem="kfi-Sf-MNs" secondAttribute="leading" constant="191" id="OPE-JR-txf"/>
+                            <constraint firstItem="yS7-Kl-3al" firstAttribute="leading" secondItem="kfi-Sf-MNs" secondAttribute="leadingMargin" constant="-20" id="TQT-wM-ZMB"/>
+                            <constraint firstItem="gt7-3l-cgz" firstAttribute="leading" secondItem="kfi-Sf-MNs" secondAttribute="leading" constant="191" id="UPn-Ct-KDq"/>
+                            <constraint firstItem="DPz-sV-e3W" firstAttribute="top" secondItem="7wa-uR-Cmx" secondAttribute="bottom" constant="8" id="Vg0-gv-MnM"/>
+                            <constraint firstItem="swT-pU-egr" firstAttribute="leading" secondItem="kfi-Sf-MNs" secondAttribute="leading" constant="-3" id="Y6O-1M-Rh4"/>
+                            <constraint firstItem="UwQ-60-5OW" firstAttribute="top" secondItem="7wa-uR-Cmx" secondAttribute="bottom" constant="104" id="ajs-69-GCe"/>
+                            <constraint firstItem="MKl-TO-VO8" firstAttribute="top" secondItem="7wa-uR-Cmx" secondAttribute="bottom" constant="104" id="dNw-13-8fK"/>
+                            <constraint firstItem="DPz-sV-e3W" firstAttribute="leading" secondItem="kfi-Sf-MNs" secondAttribute="leading" constant="1" id="dn7-VA-hO2"/>
+                            <constraint firstItem="LAZ-bD-giQ" firstAttribute="leading" secondItem="kfi-Sf-MNs" secondAttribute="leading" constant="1" id="hoG-xy-mTd"/>
+                            <constraint firstItem="UwQ-60-5OW" firstAttribute="leading" secondItem="kfi-Sf-MNs" secondAttribute="leading" constant="191" id="kDd-tm-MeM"/>
+                            <constraint firstItem="yS7-Kl-3al" firstAttribute="top" secondItem="kfi-Sf-MNs" secondAttribute="topMargin" id="noW-K4-orZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yS7-Kl-3al" secondAttribute="trailing" constant="-20" id="olK-j5-Cji"/>
+                            <constraint firstItem="wZU-iO-37g" firstAttribute="leading" secondItem="kfi-Sf-MNs" secondAttribute="leading" constant="1" id="ucR-0Z-9aV"/>
+                            <constraint firstItem="urw-dO-OlB" firstAttribute="top" secondItem="7wa-uR-Cmx" secondAttribute="bottom" constant="392" id="waq-lI-YY6"/>
+                            <constraint firstItem="eWb-hm-SSj" firstAttribute="top" secondItem="7wa-uR-Cmx" secondAttribute="bottom" constant="200" id="wwM-xU-mWn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fishbowl GO" id="Pip-ka-xhn">
+                        <barButtonItem key="backBarButtonItem" title="Menu" id="bAQ-m7-Gst"/>
+                        <barButtonItem key="leftBarButtonItem" image="account-logout-32.png" id="Zqx-jg-hDL">
+                            <color key="tintColor" red="0.2461538462" green="0.2461538462" blue="0.2461538462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="btnLogout:" destination="qBd-oH-3Zy" id="e8D-g5-x1A"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="three-dots" width="11" id="3HO-1y-pWQ">
+                            <inset key="imageInsets" minX="18" minY="7" maxX="0.0" maxY="5"/>
+                            <color key="tintColor" red="0.2461538462" green="0.2461538462" blue="0.2461538462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Laf-JI-sNb" kind="presentation" identifier="segue_settings" id="T4r-Rx-ho5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnAddInventory" destination="hGC-KZ-ky8" id="srD-Ye-yLy"/>
+                        <outlet property="btnCycle" destination="gt7-3l-cgz" id="Z1b-XQ-rS0"/>
+                        <outlet property="btnDelivery" destination="swT-pU-egr" id="cBP-Vn-WMk"/>
+                        <outlet property="btnHeightAddInventory" destination="3w6-lc-dYP" id="Kbv-97-0uq"/>
+                        <outlet property="btnHeightCycle" destination="eb7-5I-r76" id="DbI-yQ-kep"/>
+                        <outlet property="btnHeightDelivery" destination="nFo-7O-Lt1" id="rxu-xg-OhY"/>
+                        <outlet property="btnHeightMove" destination="jha-7M-Yyp" id="N38-tC-qnp"/>
+                        <outlet property="btnHeightPack" destination="KHB-Mm-PP4" id="Wy6-yg-nnC"/>
+                        <outlet property="btnHeightPart" destination="5pu-dO-XrV" id="zdb-hG-aTC"/>
+                        <outlet property="btnHeightPick" destination="51h-lx-yv6" id="xdg-nJ-EO2"/>
+                        <outlet property="btnHeightReceive" destination="VbT-mo-LBy" id="uLS-KV-T6d"/>
+                        <outlet property="btnHeightScrap" destination="Wbm-fo-2dQ" id="KBN-6H-N7D"/>
+                        <outlet property="btnHeightShip" destination="9yZ-BJ-VYq" id="ucK-TE-1lK"/>
+                        <outlet property="btnHeightWorkorder" destination="zDI-qP-uUL" id="zkd-wp-EFl"/>
+                        <outlet property="btnLeftAddInventory" destination="OPE-JR-txf" id="Uw7-aX-fQL"/>
+                        <outlet property="btnLeftCycle" destination="UPn-Ct-KDq" id="L8b-zU-p43"/>
+                        <outlet property="btnLeftDelivery" destination="Y6O-1M-Rh4" id="Bde-Qa-d5g"/>
+                        <outlet property="btnLeftMove" destination="7xU-25-vzV" id="dzt-9w-oG3"/>
+                        <outlet property="btnLeftPack" destination="0Cx-H5-JlI" id="E82-jV-000"/>
+                        <outlet property="btnLeftPart" destination="hoG-xy-mTd" id="Ll2-7J-n1N"/>
+                        <outlet property="btnLeftPick" destination="dn7-VA-hO2" id="mnk-SP-oGp"/>
+                        <outlet property="btnLeftReceive" destination="kDd-tm-MeM" id="mi5-Y1-gAW"/>
+                        <outlet property="btnLeftScrap" destination="ucR-0Z-9aV" id="z2S-IU-I3W"/>
+                        <outlet property="btnLeftShip" destination="Ne8-aG-IOU" id="JF2-VY-9Tu"/>
+                        <outlet property="btnLeftWorkorder" destination="IbA-B9-RIz" id="l9g-jm-9UQ"/>
+                        <outlet property="btnMove" destination="eWb-hm-SSj" id="fNB-Zn-PVe"/>
+                        <outlet property="btnPack" destination="ENt-0y-R8j" id="zqO-lX-dZA"/>
+                        <outlet property="btnPart" destination="LAZ-bD-giQ" id="tsb-Vf-jyc"/>
+                        <outlet property="btnPick" destination="DPz-sV-e3W" id="X3w-QC-mtF"/>
+                        <outlet property="btnReceive" destination="UwQ-60-5OW" id="hXe-Bq-pHE"/>
+                        <outlet property="btnScrap" destination="wZU-iO-37g" id="8kV-JK-mrY"/>
+                        <outlet property="btnShip" destination="MKl-TO-VO8" id="lLn-n9-FE2"/>
+                        <outlet property="btnTopAddInventory" destination="CT1-mX-zpa" id="3bS-B5-KuR"/>
+                        <outlet property="btnTopCycle" destination="3NH-pD-r0x" id="vvv-vj-8CH"/>
+                        <outlet property="btnTopDelivery" destination="6EY-S2-0dN" id="R8m-Hb-0N7"/>
+                        <outlet property="btnTopMove" destination="wwM-xU-mWn" id="CCS-QL-Urw"/>
+                        <outlet property="btnTopPack" destination="34A-xh-T7s" id="Gno-TO-GEb"/>
+                        <outlet property="btnTopPart" destination="J01-E9-Lbw" id="ygB-2d-hYG"/>
+                        <outlet property="btnTopPick" destination="Vg0-gv-MnM" id="6FD-fP-Btc"/>
+                        <outlet property="btnTopReceive" destination="ajs-69-GCe" id="NOf-X4-2Ny"/>
+                        <outlet property="btnTopScrap" destination="G7K-KE-YsT" id="V9N-ID-kVj"/>
+                        <outlet property="btnTopShip" destination="dNw-13-8fK" id="ccz-TJ-kbd"/>
+                        <outlet property="btnTopWorkorder" destination="waq-lI-YY6" id="oTi-5E-pTb"/>
+                        <outlet property="btnWidthAddInventory" destination="n6q-1E-GZf" id="Tpe-Tv-YrI"/>
+                        <outlet property="btnWidthCycle" destination="OdI-PV-Kb2" id="cTY-bT-Y2d"/>
+                        <outlet property="btnWidthDelivery" destination="bkK-vB-wBD" id="jpd-t3-dpM"/>
+                        <outlet property="btnWidthMove" destination="B9Y-yu-Zdb" id="J9x-6x-B3U"/>
+                        <outlet property="btnWidthPack" destination="Gyg-Bu-eRk" id="bkm-gm-KYF"/>
+                        <outlet property="btnWidthPart" destination="Bu7-Su-Knr" id="13S-7a-ZgU"/>
+                        <outlet property="btnWidthPick" destination="mF8-bg-6v0" id="xGk-Ox-cc4"/>
+                        <outlet property="btnWidthReceive" destination="Geb-X6-rUV" id="cCI-H4-MtD"/>
+                        <outlet property="btnWidthScrap" destination="rxH-L0-P5a" id="nMY-uo-zfP"/>
+                        <outlet property="btnWidthShip" destination="YvS-G4-y9l" id="u6g-tZ-Cka"/>
+                        <outlet property="btnWidthWorkorder" destination="jDv-8t-QbZ" id="hrl-l6-6Xs"/>
+                        <outlet property="btnWorkOrder" destination="urw-dO-OlB" id="3qr-fl-ahT"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="login_screen_segue" modalTransitionStyle="crossDissolve" id="3vp-S7-2BX"/>
+                        <segue destination="n05-Tt-baX" kind="presentation" identifier="segue_about" id="Bgt-ug-Wbr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5h-mw-6ZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2108" y="26.53673163418291"/>
+        </scene>
+        <!--Fishbowl GO-->
+        <scene sceneID="bNY-Be-gqQ">
+            <objects>
+                <navigationController title="Fishbowl GO" id="dzf-IO-vYb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KzZ-lf-Cv7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qBd-oH-3Zy" kind="relationship" relationship="rootViewController" id="Hzz-gi-rsM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rz8-1f-Qsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="27"/>
+        </scene>
+        <!--Delivery-->
+        <scene sceneID="KX1-MJ-qGP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Delivery" id="cFf-fG-OXm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lR2-bW-6qf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2835" y="711"/>
+        </scene>
+        <!--AddInventory-->
+        <scene sceneID="a9h-xl-MhW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddInventory" id="J4c-Kt-43M" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEs-zn-xYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3547" y="711"/>
+        </scene>
+        <!--Scanner-->
+        <scene sceneID="gCh-af-8UI">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Scanner" storyboardName="Scanner" referencedIdentifier="Scanner" id="MGh-SV-8la" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9HE-lP-sUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3792" y="711"/>
+        </scene>
+        <!--Receiving-->
+        <scene sceneID="5Ow-IE-rwJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Receiving" id="gH5-uy-5NH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RhD-LK-FYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="711"/>
+        </scene>
+        <!--Shipping-->
+        <scene sceneID="Cxw-Ax-4eB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Shipping" id="a2Z-l3-wBD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RjX-J2-nRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="711"/>
+        </scene>
+        <!--WorkOrder-->
+        <scene sceneID="c8i-ut-IAd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WorkOrder" id="DY4-1J-qMz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycB-TW-HLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2587" y="711"/>
+        </scene>
+        <!--Packing-->
+        <scene sceneID="7Et-GW-eDY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Packing" id="Drf-N5-EjC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egC-64-xH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1363" y="711"/>
+        </scene>
+        <!--LocationsChooser-->
+        <scene sceneID="ytR-nd-wKX">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="LocationsChooser" storyboardName="LocationChooser" referencedIdentifier="LocationsChooser" id="Mne-cK-J1i" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uuk-wz-KXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8196.7999999999993" y="-943.6281859070466"/>
+        </scene>
+        <!--Move-->
+        <scene sceneID="hdn-iV-G2c">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Move" id="pJh-ma-FFr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hB9-eu-Vmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1986" y="711"/>
+        </scene>
+        <!--Cycle-->
+        <scene sceneID="v14-Bf-Nnj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Cycle" id="rD5-VH-57A" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iPN-iL-7Am" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2166" y="711"/>
+        </scene>
+        <!--Part-->
+        <scene sceneID="O2c-hx-zjM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Part" id="RJh-IU-3DI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DAB-Db-mQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2366" y="711"/>
+        </scene>
+        <!--Scrap-->
+        <scene sceneID="aRX-0o-Tos">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Scrap" id="2cf-UN-rK4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Erl-lK-tLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3302" y="711"/>
+        </scene>
+        <!--Picking-->
+        <scene sceneID="tb4-00-AQr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Picking" id="aDs-rt-dnZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S02-ge-K8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1142" y="711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="account-logout-32.png" width="32" height="32"/>
+        <image name="add_50x50" width="50" height="50"/>
+        <image name="checkbox-icon-white-unchecked" width="512" height="512"/>
+        <image name="cycle_50x50" width="50" height="50"/>
+        <image name="fbgo_logo_vertical" width="650" height="317"/>
+        <image name="move_50x50" width="50" height="50"/>
+        <image name="pack_50x50" width="50" height="50"/>
+        <image name="part_50x50" width="50" height="50"/>
+        <image name="pick_50x50" width="50" height="50"/>
+        <image name="receive_50x50" width="50" height="50"/>
+        <image name="scrap_50x50" width="50" height="50"/>
+        <image name="ship_50x50" width="50" height="50"/>
+        <image name="splash-intro-750x1334" width="750" height="1334"/>
+        <image name="splash-intro-blur-750x1334.png" width="750" height="1334"/>
+        <image name="three-dots" width="32" height="32"/>
+        <image name="work_order_50x50" width="50" height="50"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Bgt-ug-Wbr"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.2461538462" green="0.2461538462" blue="0.2461538462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

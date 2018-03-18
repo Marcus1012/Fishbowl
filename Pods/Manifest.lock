@@ -1,0 +1,51 @@
+PODS:
+  - AEXML (3.0.0)
+  - CocoaAsyncSocket (7.5.0):
+    - CocoaAsyncSocket/GCD (= 7.5.0)
+  - CocoaAsyncSocket/GCD (7.5.0)
+  - CryptoSwift (0.5.2)
+  - DatePickerDialog (1.1.7)
+  - MMMarkdown (0.5.5)
+  - ObjectMapper (1.5.0)
+  - PMJSON (0.9.4)
+  - SVProgressHUD (2.0.3)
+  - SwiftSignatureView (1.0.3)
+  - SwiftyJSON (2.3.3)
+
+DEPENDENCIES:
+  - AEXML (~> 3.0.0)
+  - CocoaAsyncSocket
+  - CryptoSwift (~> 0.5.2)
+  - DatePickerDialog (from `https://github.com/smaugho/DatePickerDialog-iOS-Swift.git`, branch `Swift_2.3`)
+  - MMMarkdown (~> 0.5.5)
+  - ObjectMapper (~> 1.3)
+  - PMJSON (~> 0.9.4)
+  - SVProgressHUD
+  - SwiftSignatureView (~> 1.0.3)
+  - SwiftyJSON (~> 2.3.2)
+
+EXTERNAL SOURCES:
+  DatePickerDialog:
+    :branch: Swift_2.3
+    :git: https://github.com/smaugho/DatePickerDialog-iOS-Swift.git
+
+CHECKOUT OPTIONS:
+  DatePickerDialog:
+    :commit: dee45a7703de0ac4b5eacac074f1cd50bf979347
+    :git: https://github.com/smaugho/DatePickerDialog-iOS-Swift.git
+
+SPEC CHECKSUMS:
+  AEXML: 716fb0a8decba4a3517324a71fee3685b30233d2
+  CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
+  CryptoSwift: c1ef79f901b86099a6fe8b3c7524cf9f3f3c8c40
+  DatePickerDialog: bd5e7e92e4da2c6a8966b28d5f5d8f335d6c2c63
+  MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
+  ObjectMapper: 386645adca9d9d23b95eda43090b09d66444cf14
+  PMJSON: 187c6aab8071b3f636b432e1c16ecdfc3e954905
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  SwiftSignatureView: d02811d7ee09507d4ec788f38c83e21e7220e246
+  SwiftyJSON: 0fd0a115a3c0c09b277d2ab801df154902b942c3
+
+PODFILE CHECKSUM: 3abcd7872bd818082f920e6fd04d236d481eb426
+
+COCOAPODS: 1.1.1

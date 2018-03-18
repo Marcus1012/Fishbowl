@@ -1,0 +1,1575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200187971E25D53100B0886B /* SerialNumberAdderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200187951E25D53100B0886B /* SerialNumberAdderCell.swift */; };
+		200187981E25D53100B0886B /* SerialNumberAdderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200187961E25D53100B0886B /* SerialNumberAdderCell.xib */; };
+		20047BC11D9B7FE800716383 /* PartDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20047BC01D9B7FE800716383 /* PartDescriptionCell.swift */; };
+		2008F3161DDBA6EE00878542 /* PackCellQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2008F3151DDBA6EE00878542 /* PackCellQuantity.swift */; };
+		2008F3181DDBAD1D00878542 /* PackCellTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2008F3171DDBAD1D00878542 /* PackCellTracking.swift */; };
+		200A16341D755FD6006EAF5F /* ReceivingListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200A16331D755FD6006EAF5F /* ReceivingListRequest.swift */; };
+		200B7E391D97856C003FEE7A /* SaveUpcRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B7E381D97856C003FEE7A /* SaveUpcRequest.swift */; };
+		200B7E3B1D97A27D003FEE7A /* InventoryQuantityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B7E3A1D97A27D003FEE7A /* InventoryQuantityRequest.swift */; };
+		200B7E3D1D97B526003FEE7A /* InventoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B7E3C1D97B526003FEE7A /* InventoryCell.swift */; };
+		201160821D545CF40066028B /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201160811D545CF40066028B /* Compatibility.swift */; };
+		2012BE931EAE56E400DCF960 /* ReceivePartTrackAllTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012BE921EAE56E400DCF960 /* ReceivePartTrackAllTableViewController.swift */; };
+		2016A2441D88C4CB00643D12 /* LockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2016A2431D88C4CB00643D12 /* LockButton.swift */; };
+		201742531D950A7200A5B513 /* DeliverySignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201742521D950A7200A5B513 /* DeliverySignatureViewController.swift */; };
+		20178AFA1E2413E400694F73 /* SwiftCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20178AF91E2413E400694F73 /* SwiftCache.swift */; };
+		2018F87E1DE4E93400D87536 /* FbConsumeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018F87D1DE4E93400D87536 /* FbConsumeItems.swift */; };
+		2018F8801DE4EA6900D87536 /* FbConsumeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018F87F1DE4EA6900D87536 /* FbConsumeItem.swift */; };
+		201CD6F51DCA6F5900998302 /* PackCellSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201CD6F41DCA6F5900998302 /* PackCellSerial.swift */; };
+		201CD6F71DCA766E00998302 /* PackCellPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201CD6F61DCA766E00998302 /* PackCellPart.swift */; };
+		2020490F1D66861B00640242 /* Fishbowl-Icon-180x180-bw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2020490D1D66861B00640242 /* Fishbowl-Icon-180x180-bw.jpg */; };
+		202049101D66861B00640242 /* Fishbowl-Icon-180x180-lightgray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2020490E1D66861B00640242 /* Fishbowl-Icon-180x180-lightgray.jpg */; };
+		20213CC21DF8887A005A2C29 /* WorkOrderCellTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20213CC11DF8887A005A2C29 /* WorkOrderCellTracking.swift */; };
+		20213CC41DF88976005A2C29 /* WorkOrderCellQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20213CC31DF88976005A2C29 /* WorkOrderCellQuantity.swift */; };
+		20213CC61DF889F8005A2C29 /* WorkOrderCellLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20213CC51DF889F8005A2C29 /* WorkOrderCellLocation.swift */; };
+		20213CC81DF88AC9005A2C29 /* WorkOrderCellPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20213CC71DF88AC9005A2C29 /* WorkOrderCellPart.swift */; };
+		20216D1E1D9D105A00AD2F5B /* PartImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20216D1D1D9D105A00AD2F5B /* PartImageViewController.swift */; };
+		2023E7491D6448F40072843E /* FbPickItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2023E7481D6448F40072843E /* FbPickItem.swift */; };
+		20270AB11DFB584A00FEF63F /* FbUserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20270AB01DFB584A00FEF63F /* FbUserList.swift */; };
+		20270AB31DFB5BFB00FEF63F /* FbLocationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20270AB21DFB5BFB00FEF63F /* FbLocationList.swift */; };
+		20270AB51DFB5CC600FEF63F /* FbLocationGroupList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20270AB41DFB5CC600FEF63F /* FbLocationGroupList.swift */; };
+		202E420E1D305DE200E6AA46 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E420D1D305DE200E6AA46 /* Constant.swift */; };
+		203135381DBEC5CB00935C16 /* FbTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203135371DBEC5CB00935C16 /* FbTag.swift */; };
+		2031353A1DBEC9E500935C16 /* FbDestinationTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203135391DBEC9E500935C16 /* FbDestinationTag.swift */; };
+		2031353C1DBEE98200935C16 /* FbPickItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031353B1DBEE98200935C16 /* FbPickItems.swift */; };
+		2031353E1DBEEE6E00935C16 /* FbPickOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031353D1DBEEE6E00935C16 /* FbPickOrders.swift */; };
+		203135401DBF0C5100935C16 /* FbPartTrackingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031353F1DBF0C5100935C16 /* FbPartTrackingList.swift */; };
+		203135421DBF0E3A00935C16 /* FbTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203135411DBF0E3A00935C16 /* FbTracking.swift */; };
+		20313D531E2DE6F400734A09 /* CycleInventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20313D521E2DE6F400734A09 /* CycleInventoryTableViewController.swift */; };
+		2032E18C1D6EDA4500631E4E /* ShipListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2032E18B1D6EDA4500631E4E /* ShipListRequest.swift */; };
+		2036CB2F1D827F5E00995284 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2036CB2E1D827F5E00995284 /* CheckBox.swift */; };
+		2036CB351D8281EC00995284 /* checkbox-icon-light-checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 2036CB311D8281EC00995284 /* checkbox-icon-light-checked.png */; };
+		2036CB361D8281EC00995284 /* checkbox-icon-light-unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 2036CB321D8281EC00995284 /* checkbox-icon-light-unchecked.png */; };
+		2036D33D1DD642E80057AF9D /* FbShippingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2036D33C1DD642E80057AF9D /* FbShippingItems.swift */; };
+		203D9FF11D53041000662D8F /* PluginDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203D9FF01D53041000662D8F /* PluginDataRequest.swift */; };
+		2041DB641D505B7000BC2733 /* PickRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041DB631D505B7000BC2733 /* PickRequest.swift */; };
+		2041DB661D505D0900BC2733 /* PickOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2041DB651D505D0900BC2733 /* PickOrderViewController.swift */; };
+		204C548E1F50B8A2006AFF5B /* Scrap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204C548D1F50B8A2006AFF5B /* Scrap.storyboard */; };
+		204C54911F50BC89006AFF5B /* AddInventory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204C548F1F50BC89006AFF5B /* AddInventory.storyboard */; };
+		204C54931F54A18E006AFF5B /* AddInventoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C54921F54A18E006AFF5B /* AddInventoryRequest.swift */; };
+		204C54961F54A7EC006AFF5B /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C54941F54A7EC006AFF5B /* NoteCell.swift */; };
+		204C54971F54A7EC006AFF5B /* NoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204C54951F54A7EC006AFF5B /* NoteCell.xib */; };
+		204C54991F54AAAF006AFF5B /* AddInventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C54981F54AAAF006AFF5B /* AddInventoryTableViewController.swift */; };
+		204C549C1F54AE39006AFF5B /* UnitCostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C549A1F54AE39006AFF5B /* UnitCostCell.swift */; };
+		204C549D1F54AE39006AFF5B /* UnitCostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204C549B1F54AE39006AFF5B /* UnitCostCell.xib */; };
+		2052AC791D2F7FF200A862C1 /* header_logo_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC771D2F7FF200A862C1 /* header_logo_black.png */; };
+		2052AC7A1D2F7FF200A862C1 /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC781D2F7FF200A862C1 /* header_logo.png */; };
+		2052AC891D2F805500A862C1 /* account-logout-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC7C1D2F805500A862C1 /* account-logout-32.png */; };
+		2052AC8A1D2F805500A862C1 /* account-logout-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC7D1D2F805500A862C1 /* account-logout-48.png */; };
+		2052AC8B1D2F805500A862C1 /* cycle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC7E1D2F805500A862C1 /* cycle.png */; };
+		2052AC8C1D2F805500A862C1 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC7F1D2F805500A862C1 /* edit.png */; };
+		2052AC8D1D2F805500A862C1 /* ic_barcode_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC801D2F805500A862C1 /* ic_barcode_black.png */; };
+		2052AC8E1D2F805500A862C1 /* ic_info_black_24dp-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC811D2F805500A862C1 /* ic_info_black_24dp-large.png */; };
+		2052AC8F1D2F805500A862C1 /* ic_info_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC821D2F805500A862C1 /* ic_info_black_24dp.png */; };
+		2052AC901D2F805500A862C1 /* move.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC831D2F805500A862C1 /* move.png */; };
+		2052AC911D2F805500A862C1 /* open.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC841D2F805500A862C1 /* open.png */; };
+		2052AC921D2F805500A862C1 /* pack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC851D2F805500A862C1 /* pack.png */; };
+		2052AC941D2F805500A862C1 /* receive.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC871D2F805500A862C1 /* receive.png */; };
+		2052AC951D2F805500A862C1 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC881D2F805500A862C1 /* ship.png */; };
+		2052AC9F1D2F808700A862C1 /* cycle_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC971D2F808700A862C1 /* cycle_large.png */; };
+		2052ACA01D2F808700A862C1 /* move_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC981D2F808700A862C1 /* move_large.png */; };
+		2052ACA11D2F808700A862C1 /* pack_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC991D2F808700A862C1 /* pack_large.png */; };
+		2052ACA21D2F808700A862C1 /* part_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC9A1D2F808700A862C1 /* part_large.png */; };
+		2052ACA31D2F808700A862C1 /* pick_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC9B1D2F808700A862C1 /* pick_large.png */; };
+		2052ACA41D2F808700A862C1 /* receive_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC9C1D2F808700A862C1 /* receive_large.png */; };
+		2052ACA51D2F808700A862C1 /* ship_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC9D1D2F808700A862C1 /* ship_large.png */; };
+		2052ACA61D2F808700A862C1 /* work_order_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2052AC9E1D2F808700A862C1 /* work_order_large.png */; };
+		2052ACAE1D2F80F600A862C1 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACA91D2F80F600A862C1 /* Connection.swift */; };
+		2052ACAF1D2F80F600A862C1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACAA1D2F80F600A862C1 /* Extensions.swift */; };
+		2052ACB01D2F80F600A862C1 /* ImageFromText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACAB1D2F80F600A862C1 /* ImageFromText.swift */; };
+		2052ACB11D2F80F600A862C1 /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACAC1D2F80F600A862C1 /* JsonSerializer.swift */; };
+		2052ACB61D2F813300A862C1 /* CarrierListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACB21D2F813300A862C1 /* CarrierListRequest.swift */; };
+		2052ACB71D2F813300A862C1 /* FBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACB31D2F813300A862C1 /* FBRequest.swift */; };
+		2052ACB81D2F813300A862C1 /* FBStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACB41D2F813300A862C1 /* FBStatus.swift */; };
+		2052ACB91D2F813300A862C1 /* PickListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACB51D2F813300A862C1 /* PickListRequest.swift */; };
+		2056C2AF1D5D47330005AF2B /* FbCarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2056C2AE1D5D47330005AF2B /* FbCarrier.swift */; };
+		205D43F91E033995005F9A4C /* FbReceiptItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D43F81E033995005F9A4C /* FbReceiptItems.swift */; };
+		205E42F01D780FF800A284D8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205E42EF1D780FF800A284D8 /* Utils.swift */; };
+		205FD84B1DE41BD600E35168 /* WorkOrderDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205FD84A1DE41BD600E35168 /* WorkOrderDetailCell.swift */; };
+		205FD84D1DE41CBC00E35168 /* WorkOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205FD84C1DE41CBC00E35168 /* WorkOrderDetailViewController.swift */; };
+		205FD84F1DE4272800E35168 /* WorkOrderListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205FD84E1DE4272800E35168 /* WorkOrderListRequest.swift */; };
+		205FD8511DE42C0A00E35168 /* FbWorkOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205FD8501DE42C0A00E35168 /* FbWorkOrder.swift */; };
+		205FD8531DE432B300E35168 /* FbWorkOrderItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205FD8521DE432B300E35168 /* FbWorkOrderItems.swift */; };
+		205FD8551DE4342F00E35168 /* FbWOItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205FD8541DE4342F00E35168 /* FbWOItem.swift */; };
+		20629EBF1E14257300962FC2 /* FbReceivedReceipts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20629EBE1E14257300962FC2 /* FbReceivedReceipts.swift */; };
+		2064C64F1DB6E74D00C246F0 /* PackOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064C64E1DB6E74D00C246F0 /* PackOrderTableViewController.swift */; };
+		206879A51E318B0400D4B325 /* RPMConsultingServices-acknowledgements.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 206879A41E318B0400D4B325 /* RPMConsultingServices-acknowledgements.markdown */; };
+		206879A81E31F4BD00D4B325 /* DebugSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206879A71E31F4BD00D4B325 /* DebugSocket.swift */; };
+		20692D461D6950AF00A6F218 /* locked-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 20692D451D6950AF00A6F218 /* locked-30.png */; };
+		20692D481D6950FA00A6F218 /* unlocked-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 20692D471D6950FA00A6F218 /* unlocked-30.png */; };
+		20692D4A1D69517F00A6F218 /* unlocked-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 20692D491D69517F00A6F218 /* unlocked-20.png */; };
+		20692D4C1D69526900A6F218 /* PickItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20692D4B1D69526900A6F218 /* PickItemViewController.swift */; };
+		20692D501D6BFDBF00A6F218 /* locked-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 20692D4F1D6BFDBF00A6F218 /* locked-20.png */; };
+		20692D531D6C105E00A6F218 /* pick-96.png in Resources */ = {isa = PBXBuildFile; fileRef = 20692D511D6C105E00A6F218 /* pick-96.png */; };
+		20692D541D6C105E00A6F218 /* pick-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 20692D521D6C105E00A6F218 /* pick-144.png */; };
+		20692D561D6C107C00A6F218 /* open-96.png in Resources */ = {isa = PBXBuildFile; fileRef = 20692D551D6C107C00A6F218 /* open-96.png */; };
+		20692D581D6C133E00A6F218 /* PartGetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20692D571D6C133E00A6F218 /* PartGetRequest.swift */; };
+		20692D5A1D6C18F900A6F218 /* FbPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20692D591D6C18F900A6F218 /* FbPart.swift */; };
+		20692D5D1D6C2F3200A6F218 /* Fishbowl_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20692D5C1D6C2F3200A6F218 /* Fishbowl_Logo.png */; };
+		20692D5F1D6C2F4200A6F218 /* fishbowl-launch-screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20692D5E1D6C2F4200A6F218 /* fishbowl-launch-screen.jpg */; };
+		20692D611D6C30D900A6F218 /* fishbowl-background-screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20692D601D6C30D900A6F218 /* fishbowl-background-screen.jpg */; };
+		206A76041D892D5F009E9E53 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206A76031D892D5F009E9E53 /* LocationCell.swift */; };
+		206A76061D8938FC009E9E53 /* LocationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206A76051D8938FC009E9E53 /* LocationTextField.swift */; };
+		206AD70C1DB7606C00442E60 /* FbCarton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206AD70B1DB7606C00442E60 /* FbCarton.swift */; };
+		206AD70E1DB7639900442E60 /* FbShippingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206AD70D1DB7639900442E60 /* FbShippingItem.swift */; };
+		206AD7101DB7DC0200442E60 /* PackPartStandardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206AD70F1DB7DC0200442E60 /* PackPartStandardTableViewController.swift */; };
+		206BC7BF1DB87C5B00ED05AC /* FbTrackingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206BC7BE1DB87C5B00ED05AC /* FbTrackingItem.swift */; };
+		206DA3B91E0846AB00B2FF7C /* PartWithTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206DA3B81E0846AB00B2FF7C /* PartWithTracking.storyboard */; };
+		206DA3BB1E0848B600B2FF7C /* PartTrackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206DA3BA1E0848B600B2FF7C /* PartTrackTableViewController.swift */; };
+		206DA3BD1E0996D000B2FF7C /* ReceivePartTrackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206DA3BC1E0996D000B2FF7C /* ReceivePartTrackTableViewController.swift */; };
+		206DA3BF1E09BB2300B2FF7C /* ReceivePartTrackSerialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206DA3BE1E09BB2300B2FF7C /* ReceivePartTrackSerialTableViewController.swift */; };
+		206E3B481DDF7814008862E9 /* PickOrderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206E3B471DDF7814008862E9 /* PickOrderTableView.swift */; };
+		206F18861DA225FC00E20C66 /* FbPartTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206F18851DA225FC00E20C66 /* FbPartTracking.swift */; };
+		206F18881DA249D100E20C66 /* PickPartTrackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206F18871DA249D100E20C66 /* PickPartTrackTableViewController.swift */; };
+		206F188A1DA24BC500E20C66 /* PickCellPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206F18891DA24BC500E20C66 /* PickCellPart.swift */; };
+		206F188C1DA2F16600E20C66 /* PickCellLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206F188B1DA2F16600E20C66 /* PickCellLocation.swift */; };
+		206F188E1DA2F19A00E20C66 /* PickCellQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206F188D1DA2F19A00E20C66 /* PickCellQuantity.swift */; };
+		206F18901DA2F1D200E20C66 /* PickCellTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206F188F1DA2F1D200E20C66 /* PickCellTracking.swift */; };
+		20757DFC1D7E3A1D0086ED10 /* Fishbowl-GO.png in Resources */ = {isa = PBXBuildFile; fileRef = 20757DFB1D7E3A1D0086ED10 /* Fishbowl-GO.png */; };
+		207687591DC8FF6400677145 /* FbCustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207687581DC8FF6400677145 /* FbCustomField.swift */; };
+		2076875B1DC9015900677145 /* FbCustomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076875A1DC9015900677145 /* FbCustomList.swift */; };
+		2076875D1DC9022300677145 /* FbCustomListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076875C1DC9022300677145 /* FbCustomListItem.swift */; };
+		2076875F1DC9031F00677145 /* FbCustomFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076875E1DC9031F00677145 /* FbCustomFields.swift */; };
+		2078FA0A1D8171C30099565F /* DeliveryVewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078FA091D8171C30099565F /* DeliveryVewController.swift */; };
+		2078FA0C1D8173DE0099565F /* DeliveryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078FA0B1D8173DE0099565F /* DeliveryCell.swift */; };
+		2079C79E1DB607C2007E271D /* splash-intro-blur-750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 2079C79D1DB607C2007E271D /* splash-intro-blur-750x1334.png */; };
+		2079C7A01DB60A29007E271D /* PrintReportRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2079C79F1DB60A29007E271D /* PrintReportRequest.swift */; };
+		207D13471DF72AE10074BDE3 /* FbAvailablePickLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D13461DF72AE10074BDE3 /* FbAvailablePickLocations.swift */; };
+		208288A11DC3C3A5003AED5D /* FbSerialNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208288A01DC3C3A5003AED5D /* FbSerialNum.swift */; };
+		208288A31DC3C5DF003AED5D /* FbSerialNumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208288A21DC3C5DF003AED5D /* FbSerialNumList.swift */; };
+		208288A51DC3C823003AED5D /* FbSerialBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208288A41DC3C823003AED5D /* FbSerialBox.swift */; };
+		208288A71DC3C8EC003AED5D /* FbSerialBoxList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208288A61DC3C8EC003AED5D /* FbSerialBoxList.swift */; };
+		208302201D752D790003D3AD /* ShipOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083021F1D752D790003D3AD /* ShipOrderRequest.swift */; };
+		208302221D75491D0003D3AD /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208302211D75491D0003D3AD /* ReceiveViewController.swift */; };
+		208302241D754B640003D3AD /* ReceiveOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208302231D754B640003D3AD /* ReceiveOrderCell.swift */; };
+		208302261D754D1D0003D3AD /* ReceiveOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208302251D754D1D0003D3AD /* ReceiveOrderViewController.swift */; };
+		2086461A1E3BCF0000F2B253 /* BigGoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208646191E3BCF0000F2B253 /* BigGoButton.swift */; };
+		20874B981DA8785B00A36767 /* Shipping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20874B971DA8785B00A36767 /* Shipping.storyboard */; };
+		20874B9A1DA8B61F00A36767 /* Move.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20874B991DA8B61F00A36767 /* Move.storyboard */; };
+		20874B9C1DA8B78700A36767 /* Packing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20874B9B1DA8B78700A36767 /* Packing.storyboard */; };
+		20874B9E1DA8B82C00A36767 /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20874B9D1DA8B82C00A36767 /* Scanner.storyboard */; };
+		20874BA01DA8B86A00A36767 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20874B9F1DA8B86A00A36767 /* Settings.storyboard */; };
+		20874BA21DA8B8B900A36767 /* Part.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20874BA11DA8B8B900A36767 /* Part.storyboard */; };
+		20874BA41DA8B90800A36767 /* Cycle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20874BA31DA8B90800A36767 /* Cycle.storyboard */; };
+		20874BA61DA8C54700A36767 /* PickCellTrackSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20874BA51DA8C54700A36767 /* PickCellTrackSerial.swift */; };
+		20885EEA1D2F7B23008D05B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20885EE91D2F7B23008D05B8 /* AppDelegate.swift */; };
+		20885EEC1D2F7B23008D05B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20885EEB1D2F7B23008D05B8 /* ViewController.swift */; };
+		20885EEF1D2F7B23008D05B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20885EED1D2F7B23008D05B8 /* Main.storyboard */; };
+		20885EF21D2F7B23008D05B8 /* Fishbowl_GO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20885EF01D2F7B23008D05B8 /* Fishbowl_GO.xcdatamodeld */; };
+		20885EF41D2F7B23008D05B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20885EF31D2F7B23008D05B8 /* Assets.xcassets */; };
+		20885EF71D2F7B23008D05B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20885EF51D2F7B23008D05B8 /* LaunchScreen.storyboard */; };
+		208879011E249A5100D62F42 /* ScannableLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208878FF1E249A5100D62F42 /* ScannableLocationCell.swift */; };
+		208879021E249A5100D62F42 /* ScannableLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 208879001E249A5100D62F42 /* ScannableLocationCell.xib */; };
+		208879051E24A57300D62F42 /* ScannablePartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208879031E24A57300D62F42 /* ScannablePartCell.swift */; };
+		208879061E24A57300D62F42 /* ScannablePartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 208879041E24A57300D62F42 /* ScannablePartCell.xib */; };
+		208879081E24A75200D62F42 /* MoveInventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208879071E24A75200D62F42 /* MoveInventoryTableViewController.swift */; };
+		208D3CD01DAB89CD00446858 /* PickPartTrackSerialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208D3CCF1DAB89CD00446858 /* PickPartTrackSerialTableViewController.swift */; };
+		208E0EE01DB3011400391C89 /* SaveReceiptRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E0EDF1DB3011400391C89 /* SaveReceiptRequest.swift */; };
+		208E0EE21DB4813B00391C89 /* ReceivePartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E0EE11DB4813B00391C89 /* ReceivePartTableViewController.swift */; };
+		208F38111E2824A500CACF97 /* TrackingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208F380F1E2824A500CACF97 /* TrackingCell.swift */; };
+		208F38121E2824A500CACF97 /* TrackingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 208F38101E2824A500CACF97 /* TrackingCell.xib */; };
+		208F9F9F1DF5DFDF00DED39C /* WorkOrderFinishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208F9F9E1DF5DFDF00DED39C /* WorkOrderFinishTableViewController.swift */; };
+		208F9FA11DF5E0BE00DED39C /* WorkOrderFinishSerialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208F9FA01DF5E0BE00DED39C /* WorkOrderFinishSerialTableViewController.swift */; };
+		208F9FA31DF5E0F000DED39C /* WorkOrderFinishTrackingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208F9FA21DF5E0F000DED39C /* WorkOrderFinishTrackingTableViewController.swift */; };
+		208F9FA51DF6148E00DED39C /* SaveWorkOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208F9FA41DF6148E00DED39C /* SaveWorkOrderRequest.swift */; };
+		208F9FA71DF6199D00DED39C /* FbDestLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208F9FA61DF6199D00DED39C /* FbDestLocation.swift */; };
+		20945ECA1DA7541800FC93CB /* Delivery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20945EC91DA7541800FC93CB /* Delivery.storyboard */; };
+		20945ED01DA759F300FC93CB /* Receiving.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20945ECF1DA759F300FC93CB /* Receiving.storyboard */; };
+		20945ED51DA75B9B00FC93CB /* WorkOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20945ED41DA75B9B00FC93CB /* WorkOrder.storyboard */; };
+		20945EDA1DA75E3000FC93CB /* LocationChooser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20945ED91DA75E3000FC93CB /* LocationChooser.storyboard */; };
+		20945EE41DA763C800FC93CB /* Picking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20945EE31DA763C800FC93CB /* Picking.storyboard */; };
+		2097C20D1E43EB6300E23FC8 /* ButtonGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2097C20C1E43EB6300E23FC8 /* ButtonGrid.swift */; };
+		209BF2671E1F419B00D7A414 /* Acknowledgements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209BF2651E1F419B00D7A414 /* Acknowledgements.storyboard */; };
+		20A18C151DE4AE7800E7F82C /* FbUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A18C141DE4AE7800E7F82C /* FbUser.swift */; };
+		20A18C171DE4B23E00E7F82C /* FbLocationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A18C161DE4B23E00E7F82C /* FbLocationGroup.swift */; };
+		20A1974D1D546FAB00B17682 /* ActivityIndicatorWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A1974C1D546FAB00B17682 /* ActivityIndicatorWithText.swift */; };
+		20A3E6731D9B903100185B44 /* PartUomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3E6721D9B903100185B44 /* PartUomCell.swift */; };
+		20A3E6751D9B906B00185B44 /* PartUpcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3E6741D9B906B00185B44 /* PartUpcCell.swift */; };
+		20A3E6771D9B908C00185B44 /* PartImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3E6761D9B908C00185B44 /* PartImageCell.swift */; };
+		20A3E6791D9B90A800185B44 /* PartInventoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3E6781D9B90A800185B44 /* PartInventoryCell.swift */; };
+		20A3E67B1D9BA7AE00185B44 /* FbInventoryQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3E67A1D9BA7AE00185B44 /* FbInventoryQuantity.swift */; };
+		20A3E67D1D9BAEC700185B44 /* FbInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3E67C1D9BAEC700185B44 /* FbInventory.swift */; };
+		20A5064A1E367069007D3A0F /* AsyncSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A506491E367069007D3A0F /* AsyncSocket.swift */; };
+		20A5CE331D8BB33300CFA571 /* MoveRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A5CE321D8BB33300CFA571 /* MoveRequest.swift */; };
+		20A5CE351D8E665900CFA571 /* CycleCountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A5CE341D8E665900CFA571 /* CycleCountRequest.swift */; };
+		20B613111DADFEB700BAFB7E /* FbPick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B613101DADFEB700BAFB7E /* FbPick.swift */; };
+		20B613131DAE00FC00BAFB7E /* FbPickOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B613121DAE00FC00BAFB7E /* FbPickOrder.swift */; };
+		20B6131A1DAF676600BAFB7E /* ReceiveOrderPartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B613191DAF676600BAFB7E /* ReceiveOrderPartCell.swift */; };
+		20B6131C1DAF6AE800BAFB7E /* ReceiptRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6131B1DAF6AE800BAFB7E /* ReceiptRequest.swift */; };
+		20B6131E1DAF6CC100BAFB7E /* FbReceiveTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6131D1DAF6CC100BAFB7E /* FbReceiveTicket.swift */; };
+		20B613201DAF816100BAFB7E /* FbReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6131F1DAF816100BAFB7E /* FbReceipt.swift */; };
+		20B613221DAF830600BAFB7E /* FbReceiveItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B613211DAF830600BAFB7E /* FbReceiveItem.swift */; };
+		20B613241DB0351300BAFB7E /* FbReceivedReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B613231DB0351300BAFB7E /* FbReceivedReceipt.swift */; };
+		20B7562B1E2F2BE500EAE6B0 /* FbLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B7562A1E2F2BE500EAE6B0 /* FbLoginResponse.swift */; };
+		20B944401D7F8B5E00AC1079 /* ShipmentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B9443F1D7F8B5E00AC1079 /* ShipmentRequest.swift */; };
+		20BBE6831D6ED1DF00D03346 /* ShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BBE6821D6ED1DF00D03346 /* ShipViewController.swift */; };
+		20BBE6851D6ED4C900D03346 /* ShipOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BBE6841D6ED4C900D03346 /* ShipOrderCell.swift */; };
+		20BC69261DECD8DC00CCAA14 /* FbUomConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC69251DECD8DC00CCAA14 /* FbUomConversions.swift */; };
+		20C1F2091E1575F1003E5817 /* PluginSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C1F2081E1575F1003E5817 /* PluginSettings.swift */; };
+		20C206411D77DBA7003E1FF4 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C206401D77DBA7003E1FF4 /* ScannerViewController.swift */; };
+		20C206431D77E0CE003E1FF4 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C206421D77E0CE003E1FF4 /* Protocols.swift */; };
+		20C4C1841D56E7D300DB6EBE /* UOMListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C4C1831D56E7D300DB6EBE /* UOMListRequest.swift */; };
+		20C4C1861D56ED1200DB6EBE /* LocationListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C4C1851D56ED1200DB6EBE /* LocationListRequest.swift */; };
+		20C57EC31D9E0847000B37F8 /* SaveImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C57EC21D9E0847000B37F8 /* SaveImageRequest.swift */; };
+		20C799401DD27B1A00EE5755 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 20C7993F1DD27B1A00EE5755 /* README.md */; };
+		20C801001DCA431100628E01 /* PackPartTrackingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C800FF1DCA431100628E01 /* PackPartTrackingTableViewController.swift */; };
+		20C801021DCA596100628E01 /* SerialNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C801011DCA596100628E01 /* SerialNumberTableViewCell.swift */; };
+		20CC52FC1D6519DA005D1276 /* FbUom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CC52FB1D6519DA005D1276 /* FbUom.swift */; };
+		20CC52FE1D6521A3005D1276 /* FbUomConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CC52FD1D6521A3005D1276 /* FbUomConversion.swift */; };
+		20CC53001D652B05005D1276 /* FbLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CC52FF1D652B05005D1276 /* FbLocation.swift */; };
+		20D869BA1D952B300017B7FA /* PartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D869B91D952B300017B7FA /* PartViewController.swift */; };
+		20D9E22A1D8E789C00CC349E /* ScannableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D9E2291D8E789C00CC349E /* ScannableTextField.swift */; };
+		20D9E22C1D8E7CB000CC349E /* LocationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D9E22B1D8E7CB000CC349E /* LocationCache.swift */; };
+		20DB4CF51D9C84BF00213AF7 /* PickPartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB4CF41D9C84BF00213AF7 /* PickPartTableViewController.swift */; };
+		20DBB4621D5300CA00424FAA /* PickItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DBB4611D5300CA00424FAA /* PickItemCell.swift */; };
+		20DCD1D91D7A8617004A740B /* DigitalBeep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20DCD1D81D7A8617004A740B /* DigitalBeep.mp3 */; };
+		20DDC2731D813409002CC46F /* PackOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DDC2721D813409002CC46F /* PackOrderCell.swift */; };
+		20DDC2751D813F37002CC46F /* FbShipSearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DDC2741D813F37002CC46F /* FbShipSearchItem.swift */; };
+		20DDC2771D8145C8002CC46F /* FbPickSearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DDC2761D8145C8002CC46F /* FbPickSearchItem.swift */; };
+		20DDC2791D8162C1002CC46F /* FbWorkOrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DDC2781D8162C1002CC46F /* FbWorkOrderItem.swift */; };
+		20E402641DC84A7D00841896 /* FbShipping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E402631DC84A7D00841896 /* FbShipping.swift */; };
+		20E402661DC84C7700841896 /* FbCartons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E402651DC84C7700841896 /* FbCartons.swift */; };
+		20E402681DC84D0D00841896 /* FbState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E402671DC84D0D00841896 /* FbState.swift */; };
+		20E4026A1DC84D7800841896 /* FbCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E402691DC84D7800841896 /* FbCountry.swift */; };
+		20E4026C1DC84DAD00841896 /* FbAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E4026B1DC84DAD00841896 /* FbAddress.swift */; };
+		20E4138A1E1F0BE800DD46F9 /* Pods-Fishbowl GO-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 20E413891E1F0BE800DD46F9 /* Pods-Fishbowl GO-acknowledgements.markdown */; };
+		20E4138D1E1F0DED00DD46F9 /* AcknowledgementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E4138C1E1F0DED00DD46F9 /* AcknowledgementsViewController.swift */; };
+		20E587121D8913E3009F25B5 /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E587111D8913E3009F25B5 /* LocationTableViewController.swift */; };
+		20E7603D1DAC53980042864A /* ChooseSerialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7603C1DAC53980042864A /* ChooseSerialsViewController.swift */; };
+		20E87B861D30893A00DE2162 /* CompatibleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E87B851D30893A00DE2162 /* CompatibleRequest.swift */; };
+		20E913D71D767D1300EC1DB7 /* ModuleSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E913D61D767D1300EC1DB7 /* ModuleSettings.swift */; };
+		20E913D91D76910500EC1DB7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E913D81D76910500EC1DB7 /* SettingsViewController.swift */; };
+		20E922FE1D86736300803EC3 /* SavePickRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E922FD1D86736300803EC3 /* SavePickRequest.swift */; };
+		20E9CD281D9513FA007B6AF1 /* FbShipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E9CD271D9513FA007B6AF1 /* FbShipment.swift */; };
+		20F0EECA1DD4F10E00544DB0 /* SaveShipmentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F0EEC91DD4F10E00544DB0 /* SaveShipmentRequest.swift */; };
+		20F275EC1D30551300B2B37E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F275E71D30551300B2B37E /* AboutViewController.swift */; };
+		20F275ED1D30551300B2B37E /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F275E81D30551300B2B37E /* MainMenuViewController.swift */; };
+		20F275EE1D30551300B2B37E /* PackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F275E91D30551300B2B37E /* PackViewController.swift */; };
+		20F275EF1D30551300B2B37E /* PickOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F275EA1D30551300B2B37E /* PickOrderCell.swift */; };
+		20F275F01D30551300B2B37E /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F275EB1D30551300B2B37E /* PickViewController.swift */; };
+		20F734851E25510A00AA878F /* QuantityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F734831E25510A00AA878F /* QuantityCell.swift */; };
+		20F734861E25510A00AA878F /* QuantityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20F734841E25510A00AA878F /* QuantityCell.xib */; };
+		20F7BADA1D62EF12000A4FEC /* Fishbowl-Icon-180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = 20F7BAD91D62EF12000A4FEC /* Fishbowl-Icon-180x180.png */; };
+		20F8E71C1E1DD08400CD9359 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 20F8E71B1E1DD08400CD9359 /* Settings.bundle */; };
+		20FF8D5E1D7E965D003B785F /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF8D5D1D7E965D003B785F /* LoginRequest.swift */; };
+		20FF8D601D7E9815003B785F /* LogoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF8D5F1D7E9815003B785F /* LogoutRequest.swift */; };
+		20FF8D621D7EA315003B785F /* WorkOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF8D611D7EA315003B785F /* WorkOrderRequest.swift */; };
+		20FF8D641D7EA3FA003B785F /* WorkOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF8D631D7EA3FA003B785F /* WorkOrderViewController.swift */; };
+		20FF8D661D7EA7BF003B785F /* WorkOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF8D651D7EA7BF003B785F /* WorkOrderCell.swift */; };
+		91B911211DA3233BE7826B1C /* Pods_Fishbowl_GO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F59E364A3E23B869BD9FC5 /* Pods_Fishbowl_GO.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B87201C5FBBCDDB2EA51046 /* Pods-Fishbowl GO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fishbowl GO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fishbowl GO/Pods-Fishbowl GO.debug.xcconfig"; sourceTree = "<group>"; };
+		200187951E25D53100B0886B /* SerialNumberAdderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SerialNumberAdderCell.swift; path = Views/SerialNumberAdderCell.swift; sourceTree = "<group>"; };
+		200187961E25D53100B0886B /* SerialNumberAdderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SerialNumberAdderCell.xib; path = Views/SerialNumberAdderCell.xib; sourceTree = "<group>"; };
+		20047BC01D9B7FE800716383 /* PartDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PartDescriptionCell.swift; path = "View Controllers/PartDescriptionCell.swift"; sourceTree = "<group>"; };
+		2008F3151DDBA6EE00878542 /* PackCellQuantity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PackCellQuantity.swift; path = "View Controllers/PackCellQuantity.swift"; sourceTree = "<group>"; };
+		2008F3171DDBAD1D00878542 /* PackCellTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PackCellTracking.swift; path = "View Controllers/PackCellTracking.swift"; sourceTree = "<group>"; };
+		200A16331D755FD6006EAF5F /* ReceivingListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceivingListRequest.swift; path = Request/ReceivingListRequest.swift; sourceTree = "<group>"; };
+		200B7E381D97856C003FEE7A /* SaveUpcRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaveUpcRequest.swift; path = Request/SaveUpcRequest.swift; sourceTree = "<group>"; };
+		200B7E3A1D97A27D003FEE7A /* InventoryQuantityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InventoryQuantityRequest.swift; path = Request/InventoryQuantityRequest.swift; sourceTree = "<group>"; };
+		200B7E3C1D97B526003FEE7A /* InventoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InventoryCell.swift; path = "View Controllers/InventoryCell.swift"; sourceTree = "<group>"; };
+		201160811D545CF40066028B /* Compatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compatibility.swift; sourceTree = "<group>"; };
+		2012BE921EAE56E400DCF960 /* ReceivePartTrackAllTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceivePartTrackAllTableViewController.swift; path = "View Controllers/ReceivePartTrackAllTableViewController.swift"; sourceTree = "<group>"; };
+		2016A2431D88C4CB00643D12 /* LockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LockButton.swift; path = Utils/LockButton.swift; sourceTree = "<group>"; };
+		201742521D950A7200A5B513 /* DeliverySignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeliverySignatureViewController.swift; path = "View Controllers/DeliverySignatureViewController.swift"; sourceTree = "<group>"; };
+		20178AF91E2413E400694F73 /* SwiftCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftCache.swift; path = Utils/SwiftCache.swift; sourceTree = "<group>"; };
+		2018F87D1DE4E93400D87536 /* FbConsumeItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FbConsumeItems.swift; sourceTree = "<group>"; };
+		2018F87F1DE4EA6900D87536 /* FbConsumeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbConsumeItem.swift; path = "Fishbowl Objects/FbConsumeItem.swift"; sourceTree = "<group>"; };
+		201CD6F41DCA6F5900998302 /* PackCellSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PackCellSerial.swift; path = "View Controllers/PackCellSerial.swift"; sourceTree = "<group>"; };
+		201CD6F61DCA766E00998302 /* PackCellPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PackCellPart.swift; path = "View Controllers/PackCellPart.swift"; sourceTree = "<group>"; };
+		2020490D1D66861B00640242 /* Fishbowl-Icon-180x180-bw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fishbowl-Icon-180x180-bw.jpg"; sourceTree = "<group>"; };
+		2020490E1D66861B00640242 /* Fishbowl-Icon-180x180-lightgray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fishbowl-Icon-180x180-lightgray.jpg"; sourceTree = "<group>"; };
+		20213CC11DF8887A005A2C29 /* WorkOrderCellTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkOrderCellTracking.swift; path = "View Controllers/WorkOrderCellTracking.swift"; sourceTree = "<group>"; };
+		20213CC31DF88976005A2C29 /* WorkOrderCellQuantity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkOrderCellQuantity.swift; path = "View Controllers/WorkOrderCellQuantity.swift"; sourceTree = "<group>"; };
+		20213CC51DF889F8005A2C29 /* WorkOrderCellLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkOrderCellLocation.swift; path = "View Controllers/WorkOrderCellLocation.swift"; sourceTree = "<group>"; };
+		20213CC71DF88AC9005A2C29 /* WorkOrderCellPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkOrderCellPart.swift; path = "View Controllers/WorkOrderCellPart.swift"; sourceTree = "<group>"; };
+		20216D1D1D9D105A00AD2F5B /* PartImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PartImageViewController.swift; path = "View Controllers/PartImageViewController.swift"; sourceTree = "<group>"; };
+		2023E7481D6448F40072843E /* FbPickItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbPickItem.swift; path = "Fishbowl Objects/FbPickItem.swift"; sourceTree = "<group>"; };
+		20270AB01DFB584A00FEF63F /* FbUserList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbUserList.swift; path = "Fishbowl Objects/FbUserList.swift"; sourceTree = "<group>"; };
+		20270AB21DFB5BFB00FEF63F /* FbLocationList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbLocationList.swift; path = "Fishbowl Objects/FbLocationList.swift"; sourceTree = "<group>"; };
+		20270AB41DFB5CC600FEF63F /* FbLocationGroupList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbLocationGroupList.swift; path = "Fishbowl Objects/FbLocationGroupList.swift"; sourceTree = "<group>"; };
+		202E420D1D305DE200E6AA46 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = General/Constant.swift; sourceTree = "<group>"; };
+		203135371DBEC5CB00935C16 /* FbTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbTag.swift; path = "Fishbowl Objects/FbTag.swift"; sourceTree = "<group>"; };
+		203135391DBEC9E500935C16 /* FbDestinationTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FbDestinationTag.swift; sourceTree = "<group>"; };
+		2031353B1DBEE98200935C16 /* FbPickItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbPickItems.swift; path = "Fishbowl Objects/FbPickItems.swift"; sourceTree = "<group>"; };
+		2031353D1DBEEE6E00935C16 /* FbPickOrders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FbPickOrders.swift; sourceTree = "<group>"; };
+		2031353F1DBF0C5100935C16 /* FbPartTrackingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbPartTrackingList.swift; path = "Fishbowl Objects/FbPartTrackingList.swift"; sourceTree = "<group>"; };
+		203135411DBF0E3A00935C16 /* FbTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbTracking.swift; path = "Fishbowl Objects/FbTracking.swift"; sourceTree = "<group>"; };
+		20313D521E2DE6F400734A09 /* CycleInventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CycleInventoryTableViewController.swift; path = "View Controllers/CycleInventoryTableViewController.swift"; sourceTree = "<group>"; };
+		2032E18B1D6EDA4500631E4E /* ShipListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShipListRequest.swift; path = Request/ShipListRequest.swift; sourceTree = "<group>"; };
+		2036CB2E1D827F5E00995284 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		2036CB311D8281EC00995284 /* checkbox-icon-light-checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-icon-light-checked.png"; path = "Images/checkbox-icon-light-checked.png"; sourceTree = "<group>"; };
+		2036CB321D8281EC00995284 /* checkbox-icon-light-unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-icon-light-unchecked.png"; path = "Images/checkbox-icon-light-unchecked.png"; sourceTree = "<group>"; };
+		2036D33C1DD642E80057AF9D /* FbShippingItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbShippingItems.swift; path = "Fishbowl Objects/FbShippingItems.swift"; sourceTree = "<group>"; };
+		203D9FF01D53041000662D8F /* PluginDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PluginDataRequest.swift; path = Request/PluginDataRequest.swift; sourceTree = "<group>"; };
+		2041DB631D505B7000BC2733 /* PickRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickRequest.swift; sourceTree = "<group>"; };
+		2041DB651D505D0900BC2733 /* PickOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickOrderViewController.swift; path = "View Controllers/PickOrderViewController.swift"; sourceTree = "<group>"; };
+		204C548D1F50B8A2006AFF5B /* Scrap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scrap.storyboard; sourceTree = "<group>"; };
+		204C54901F50BC89006AFF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddInventory.storyboard; sourceTree = "<group>"; };
+		204C54921F54A18E006AFF5B /* AddInventoryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddInventoryRequest.swift; path = Request/AddInventoryRequest.swift; sourceTree = "<group>"; };
+		204C54941F54A7EC006AFF5B /* NoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteCell.swift; path = Views/NoteCell.swift; sourceTree = "<group>"; };
+		204C54951F54A7EC006AFF5B /* NoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteCell.xib; path = Views/NoteCell.xib; sourceTree = "<group>"; };
+		204C54981F54AAAF006AFF5B /* AddInventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddInventoryTableViewController.swift; path = "View Controllers/AddInventoryTableViewController.swift"; sourceTree = "<group>"; };
+		204C549A1F54AE39006AFF5B /* UnitCostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnitCostCell.swift; path = Views/UnitCostCell.swift; sourceTree = "<group>"; };
+		204C549B1F54AE39006AFF5B /* UnitCostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UnitCostCell.xib; path = Views/UnitCostCell.xib; sourceTree = "<group>"; };
+		2052AC771D2F7FF200A862C1 /* header_logo_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = header_logo_black.png; path = Logos/header_logo_black.png; sourceTree = "<group>"; };
+		2052AC781D2F7FF200A862C1 /* header_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = header_logo.png; path = Logos/header_logo.png; sourceTree = "<group>"; };
+		2052AC7C1D2F805500A862C1 /* account-logout-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "account-logout-32.png"; path = "Dark Icons/account-logout-32.png"; sourceTree = "<group>"; };
+		2052AC7D1D2F805500A862C1 /* account-logout-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "account-logout-48.png"; path = "Dark Icons/account-logout-48.png"; sourceTree = "<group>"; };
+		2052AC7E1D2F805500A862C1 /* cycle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cycle.png; path = "Dark Icons/cycle.png"; sourceTree = "<group>"; };
+		2052AC7F1D2F805500A862C1 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = edit.png; path = "Dark Icons/edit.png"; sourceTree = "<group>"; };
+		2052AC801D2F805500A862C1 /* ic_barcode_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_barcode_black.png; path = "Dark Icons/ic_barcode_black.png"; sourceTree = "<group>"; };
+		2052AC811D2F805500A862C1 /* ic_info_black_24dp-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_info_black_24dp-large.png"; path = "Dark Icons/ic_info_black_24dp-large.png"; sourceTree = "<group>"; };
+		2052AC821D2F805500A862C1 /* ic_info_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_info_black_24dp.png; path = "Dark Icons/ic_info_black_24dp.png"; sourceTree = "<group>"; };
+		2052AC831D2F805500A862C1 /* move.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = move.png; path = "Dark Icons/move.png"; sourceTree = "<group>"; };
+		2052AC841D2F805500A862C1 /* open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = open.png; path = "Dark Icons/open.png"; sourceTree = "<group>"; };
+		2052AC851D2F805500A862C1 /* pack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pack.png; path = "Dark Icons/pack.png"; sourceTree = "<group>"; };
+		2052AC871D2F805500A862C1 /* receive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = receive.png; path = "Dark Icons/receive.png"; sourceTree = "<group>"; };
+		2052AC881D2F805500A862C1 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship.png; path = "Dark Icons/ship.png"; sourceTree = "<group>"; };
+		2052AC971D2F808700A862C1 /* cycle_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cycle_large.png; path = "White Icons/cycle_large.png"; sourceTree = "<group>"; };
+		2052AC981D2F808700A862C1 /* move_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = move_large.png; path = "White Icons/move_large.png"; sourceTree = "<group>"; };
+		2052AC991D2F808700A862C1 /* pack_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pack_large.png; path = "White Icons/pack_large.png"; sourceTree = "<group>"; };
+		2052AC9A1D2F808700A862C1 /* part_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = part_large.png; path = "White Icons/part_large.png"; sourceTree = "<group>"; };
+		2052AC9B1D2F808700A862C1 /* pick_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pick_large.png; path = "White Icons/pick_large.png"; sourceTree = "<group>"; };
+		2052AC9C1D2F808700A862C1 /* receive_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = receive_large.png; path = "White Icons/receive_large.png"; sourceTree = "<group>"; };
+		2052AC9D1D2F808700A862C1 /* ship_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship_large.png; path = "White Icons/ship_large.png"; sourceTree = "<group>"; };
+		2052AC9E1D2F808700A862C1 /* work_order_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = work_order_large.png; path = "White Icons/work_order_large.png"; sourceTree = "<group>"; };
+		2052ACA91D2F80F600A862C1 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Utils/Connection.swift; sourceTree = "<group>"; };
+		2052ACAA1D2F80F600A862C1 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Utils/Extensions.swift; sourceTree = "<group>"; };
+		2052ACAB1D2F80F600A862C1 /* ImageFromText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageFromText.swift; path = Utils/ImageFromText.swift; sourceTree = "<group>"; };
+		2052ACAC1D2F80F600A862C1 /* JsonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonSerializer.swift; path = Utils/JsonSerializer.swift; sourceTree = "<group>"; };
+		2052ACAD1D2F80F600A862C1 /* JsonSerializerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JsonSerializerSwift.h; path = Utils/JsonSerializerSwift.h; sourceTree = "<group>"; };
+		2052ACB21D2F813300A862C1 /* CarrierListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarrierListRequest.swift; path = Request/CarrierListRequest.swift; sourceTree = "<group>"; };
+		2052ACB31D2F813300A862C1 /* FBRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FBRequest.swift; path = Request/FBRequest.swift; sourceTree = "<group>"; };
+		2052ACB41D2F813300A862C1 /* FBStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FBStatus.swift; path = Request/FBStatus.swift; sourceTree = "<group>"; };
+		2052ACB51D2F813300A862C1 /* PickListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickListRequest.swift; path = Request/PickListRequest.swift; sourceTree = "<group>"; };
+		2056C2AE1D5D47330005AF2B /* FbCarrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbCarrier.swift; path = "Fishbowl Objects/FbCarrier.swift"; sourceTree = "<group>"; };
+		205D43F81E033995005F9A4C /* FbReceiptItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbReceiptItems.swift; path = "Fishbowl Objects/FbReceiptItems.swift"; sourceTree = "<group>"; };
+		205E42EF1D780FF800A284D8 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
+		205FD84A1DE41BD600E35168 /* WorkOrderDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkOrderDetailCell.swift; path = "View Controllers/WorkOrderDetailCell.swift"; sourceTree = "<group>"; };
+		205FD84C1DE41CBC00E35168 /* WorkOrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkOrderDetailViewController.swift; path = "View Controllers/WorkOrderDetailViewController.swift"; sourceTree = "<group>"; };
+		205FD84E1DE4272800E35168 /* WorkOrderListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkOrderListRequest.swift; path = Request/WorkOrderListRequest.swift; sourceTree = "<group>"; };
+		205FD8501DE42C0A00E35168 /* FbWorkOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbWorkOrder.swift; path = "Fishbowl Objects/FbWorkOrder.swift"; sourceTree = "<group>"; };
+		205FD8521DE432B300E35168 /* FbWorkOrderItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbWorkOrderItems.swift; path = "Fishbowl Objects/FbWorkOrderItems.swift"; sourceTree = "<group>"; };
+		205FD8541DE4342F00E35168 /* FbWOItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbWOItem.swift; path = "Fishbowl Objects/FbWOItem.swift"; sourceTree = "<group>"; };
+		20629EBE1E14257300962FC2 /* FbReceivedReceipts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbReceivedReceipts.swift; path = "Fishbowl Objects/FbReceivedReceipts.swift"; sourceTree = "<group>"; };
+		2064C64E1DB6E74D00C246F0 /* PackOrderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PackOrderTableViewController.swift; path = "View Controllers/PackOrderTableViewController.swift"; sourceTree = "<group>"; };
+		206879A41E318B0400D4B325 /* RPMConsultingServices-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "RPMConsultingServices-acknowledgements.markdown"; sourceTree = "<group>"; };
+		206879A71E31F4BD00D4B325 /* DebugSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DebugSocket.swift; path = Utils/DebugSocket.swift; sourceTree = "<group>"; };
+		20692D451D6950AF00A6F218 /* locked-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locked-30.png"; path = "Dark Icons/locked-30.png"; sourceTree = "<group>"; };
+		20692D471D6950FA00A6F218 /* unlocked-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unlocked-30.png"; path = "Dark Icons/unlocked-30.png"; sourceTree = "<group>"; };
+		20692D491D69517F00A6F218 /* unlocked-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unlocked-20.png"; path = "Dark Icons/unlocked-20.png"; sourceTree = "<group>"; };
+		20692D4B1D69526900A6F218 /* PickItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickItemViewController.swift; path = "View Controllers/PickItemViewController.swift"; sourceTree = "<group>"; };
+		20692D4F1D6BFDBF00A6F218 /* locked-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locked-20.png"; path = "Dark Icons/locked-20.png"; sourceTree = "<group>"; };
+		20692D511D6C105E00A6F218 /* pick-96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pick-96.png"; path = "Dark Icons/pick-96.png"; sourceTree = "<group>"; };
+		20692D521D6C105E00A6F218 /* pick-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pick-144.png"; path = "Dark Icons/pick-144.png"; sourceTree = "<group>"; };
+		20692D551D6C107C00A6F218 /* open-96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "open-96.png"; path = "Dark Icons/open-96.png"; sourceTree = "<group>"; };
+		20692D571D6C133E00A6F218 /* PartGetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PartGetRequest.swift; path = Request/PartGetRequest.swift; sourceTree = "<group>"; };
+		20692D591D6C18F900A6F218 /* FbPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbPart.swift; path = "Fishbowl Objects/FbPart.swift"; sourceTree = "<group>"; };
+		20692D5C1D6C2F3200A6F218 /* Fishbowl_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fishbowl_Logo.png; path = Logos/Fishbowl_Logo.png; sourceTree = "<group>"; };
+		20692D5E1D6C2F4200A6F218 /* fishbowl-launch-screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "fishbowl-launch-screen.jpg"; path = "Images/fishbowl-launch-screen.jpg"; sourceTree = "<group>"; };
+		20692D601D6C30D900A6F218 /* fishbowl-background-screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "fishbowl-background-screen.jpg"; path = "Images/fishbowl-background-screen.jpg"; sourceTree = "<group>"; };
+		206A76031D892D5F009E9E53 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationCell.swift; path = "View Controllers/LocationCell.swift"; sourceTree = "<group>"; };
+		206A76051D8938FC009E9E53 /* LocationTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationTextField.swift; path = "View Controllers/LocationTextField.swift"; sourceTree = "<group>"; };
+		206AD70B1DB7606C00442E60 /* FbCarton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbCarton.swift; path = "Fishbowl Objects/FbCarton.swift"; sourceTree = "<group>"; };
+		206AD70D1DB7639900442E60 /* FbShippingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbShippingItem.swift; path = "Fishbowl Objects/FbShippingItem.swift"; sourceTree = "<group>"; };
+		206AD70F1DB7DC0200442E60 /* PackPartStandardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PackPartStandardTableViewController.swift; path = "View Controllers/PackPartStandardTableViewController.swift"; sourceTree = "<group>"; };
+		206BC7BE1DB87C5B00ED05AC /* FbTrackingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbTrackingItem.swift; path = "Fishbowl Objects/FbTrackingItem.swift"; sourceTree = "<group>"; };
+		206DA3B81E0846AB00B2FF7C /* PartWithTracking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PartWithTracking.storyboard; sourceTree = "<group>"; };
+		206DA3BA1E0848B600B2FF7C /* PartTrackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PartTrackTableViewController.swift; path = "View Controllers/PartTrackTableViewController.swift"; sourceTree = "<group>"; };
+		206DA3BC1E0996D000B2FF7C /* ReceivePartTrackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceivePartTrackTableViewController.swift; path = "View Controllers/ReceivePartTrackTableViewController.swift"; sourceTree = "<group>"; };
+		206DA3BE1E09BB2300B2FF7C /* ReceivePartTrackSerialTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceivePartTrackSerialTableViewController.swift; path = "View Controllers/ReceivePartTrackSerialTableViewController.swift"; sourceTree = "<group>"; };
+		206E3B471DDF7814008862E9 /* PickOrderTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickOrderTableView.swift; path = Views/PickOrderTableView.swift; sourceTree = "<group>"; };
+		206F18851DA225FC00E20C66 /* FbPartTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbPartTracking.swift; path = "Fishbowl Objects/FbPartTracking.swift"; sourceTree = "<group>"; };
+		206F18871DA249D100E20C66 /* PickPartTrackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickPartTrackTableViewController.swift; path = "View Controllers/PickPartTrackTableViewController.swift"; sourceTree = "<group>"; };
+		206F18891DA24BC500E20C66 /* PickCellPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickCellPart.swift; path = "View Controllers/PickCellPart.swift"; sourceTree = "<group>"; };
+		206F188B1DA2F16600E20C66 /* PickCellLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickCellLocation.swift; path = "View Controllers/PickCellLocation.swift"; sourceTree = "<group>"; };
+		206F188D1DA2F19A00E20C66 /* PickCellQuantity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickCellQuantity.swift; path = "View Controllers/PickCellQuantity.swift"; sourceTree = "<group>"; };
+		206F188F1DA2F1D200E20C66 /* PickCellTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickCellTracking.swift; path = "View Controllers/PickCellTracking.swift"; sourceTree = "<group>"; };
+		20757DFB1D7E3A1D0086ED10 /* Fishbowl-GO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fishbowl-GO.png"; path = "Images/Fishbowl-GO.png"; sourceTree = "<group>"; };
+		207687581DC8FF6400677145 /* FbCustomField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbCustomField.swift; path = "Fishbowl Objects/FbCustomField.swift"; sourceTree = "<group>"; };
+		2076875A1DC9015900677145 /* FbCustomList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbCustomList.swift; path = "Fishbowl Objects/FbCustomList.swift"; sourceTree = "<group>"; };
+		2076875C1DC9022300677145 /* FbCustomListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbCustomListItem.swift; path = "Fishbowl Objects/FbCustomListItem.swift"; sourceTree = "<group>"; };
+		2076875E1DC9031F00677145 /* FbCustomFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbCustomFields.swift; path = "Fishbowl Objects/FbCustomFields.swift"; sourceTree = "<group>"; };
+		2078FA091D8171C30099565F /* DeliveryVewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryVewController.swift; sourceTree = "<group>"; };
+		2078FA0B1D8173DE0099565F /* DeliveryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeliveryCell.swift; path = "View Controllers/DeliveryCell.swift"; sourceTree = "<group>"; };
+		2079C79D1DB607C2007E271D /* splash-intro-blur-750x1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-intro-blur-750x1334.png"; sourceTree = "<group>"; };
+		2079C79F1DB60A29007E271D /* PrintReportRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrintReportRequest.swift; path = Request/PrintReportRequest.swift; sourceTree = "<group>"; };
+		207D13461DF72AE10074BDE3 /* FbAvailablePickLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbAvailablePickLocations.swift; path = "Fishbowl Objects/FbAvailablePickLocations.swift"; sourceTree = "<group>"; };
+		208288A01DC3C3A5003AED5D /* FbSerialNum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbSerialNum.swift; path = "Fishbowl Objects/FbSerialNum.swift"; sourceTree = "<group>"; };
+		208288A21DC3C5DF003AED5D /* FbSerialNumList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbSerialNumList.swift; path = "Fishbowl Objects/FbSerialNumList.swift"; sourceTree = "<group>"; };
+		208288A41DC3C823003AED5D /* FbSerialBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbSerialBox.swift; path = "Fishbowl Objects/FbSerialBox.swift"; sourceTree = "<group>"; };
+		208288A61DC3C8EC003AED5D /* FbSerialBoxList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbSerialBoxList.swift; path = "Fishbowl Objects/FbSerialBoxList.swift"; sourceTree = "<group>"; };
+		2083021F1D752D790003D3AD /* ShipOrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShipOrderRequest.swift; path = Request/ShipOrderRequest.swift; sourceTree = "<group>"; };
+		208302211D75491D0003D3AD /* ReceiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiveViewController.swift; path = "View Controllers/ReceiveViewController.swift"; sourceTree = "<group>"; };
+		208302231D754B640003D3AD /* ReceiveOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiveOrderCell.swift; path = "View Controllers/ReceiveOrderCell.swift"; sourceTree = "<group>"; };
+		208302251D754D1D0003D3AD /* ReceiveOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiveOrderViewController.swift; path = "View Controllers/ReceiveOrderViewController.swift"; sourceTree = "<group>"; };
+		208646191E3BCF0000F2B253 /* BigGoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BigGoButton.swift; path = Views/BigGoButton.swift; sourceTree = "<group>"; };
+		20874B971DA8785B00A36767 /* Shipping.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shipping.storyboard; sourceTree = "<group>"; };
+		20874B991DA8B61F00A36767 /* Move.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Move.storyboard; sourceTree = "<group>"; };
+		20874B9B1DA8B78700A36767 /* Packing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Packing.storyboard; sourceTree = "<group>"; };
+		20874B9D1DA8B82C00A36767 /* Scanner.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scanner.storyboard; sourceTree = "<group>"; };
+		20874B9F1DA8B86A00A36767 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		20874BA11DA8B8B900A36767 /* Part.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Part.storyboard; sourceTree = "<group>"; };
+		20874BA31DA8B90800A36767 /* Cycle.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cycle.storyboard; sourceTree = "<group>"; };
+		20874BA51DA8C54700A36767 /* PickCellTrackSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickCellTrackSerial.swift; path = "View Controllers/PickCellTrackSerial.swift"; sourceTree = "<group>"; };
+		20885EE61D2F7B23008D05B8 /* Fishbowl GO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fishbowl GO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20885EE91D2F7B23008D05B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20885EEB1D2F7B23008D05B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20885EEE1D2F7B23008D05B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20885EF11D2F7B23008D05B8 /* Fishbowl_GO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fishbowl_GO.xcdatamodel; sourceTree = "<group>"; };
+		20885EF31D2F7B23008D05B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20885EF61D2F7B23008D05B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20885EF81D2F7B23008D05B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		208878FF1E249A5100D62F42 /* ScannableLocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannableLocationCell.swift; path = Views/ScannableLocationCell.swift; sourceTree = "<group>"; };
+		208879001E249A5100D62F42 /* ScannableLocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScannableLocationCell.xib; path = Views/ScannableLocationCell.xib; sourceTree = "<group>"; };
+		208879031E24A57300D62F42 /* ScannablePartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannablePartCell.swift; path = Views/ScannablePartCell.swift; sourceTree = "<group>"; };
+		208879041E24A57300D62F42 /* ScannablePartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScannablePartCell.xib; path = Views/ScannablePartCell.xib; sourceTree = "<group>"; };
+		208879071E24A75200D62F42 /* MoveInventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoveInventoryTableViewController.swift; path = "View Controllers/MoveInventoryTableViewController.swift"; sourceTree = "<group>"; };
+		208D3CCF1DAB89CD00446858 /* PickPartTrackSerialTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickPartTrackSerialTableViewController.swift; path = "View Controllers/PickPartTrackSerialTableViewController.swift"; sourceTree = "<group>"; };
+		208E0EDF1DB3011400391C89 /* SaveReceiptRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaveReceiptRequest.swift; path = Request/SaveReceiptRequest.swift; sourceTree = "<group>"; };
+		208E0EE11DB4813B00391C89 /* ReceivePartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceivePartTableViewController.swift; path = "View Controllers/ReceivePartTableViewController.swift"; sourceTree = "<group>"; };
+		208F380F1E2824A500CACF97 /* TrackingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackingCell.swift; path = Views/TrackingCell.swift; sourceTree = "<group>"; };
+		208F38101E2824A500CACF97 /* TrackingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrackingCell.xib; path = Views/TrackingCell.xib; sourceTree = "<group>"; };
+		208F9F9E1DF5DFDF00DED39C /* WorkOrderFinishTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkOrderFinishTableViewController.swift; path = "View Controllers/WorkOrderFinishTableViewController.swift"; sourceTree = "<group>"; };
+		208F9FA01DF5E0BE00DED39C /* WorkOrderFinishSerialTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkOrderFinishSerialTableViewController.swift; path = "View Controllers/WorkOrderFinishSerialTableViewController.swift"; sourceTree = "<group>"; };
+		208F9FA21DF5E0F000DED39C /* WorkOrderFinishTrackingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkOrderFinishTrackingTableViewController.swift; path = "View Controllers/WorkOrderFinishTrackingTableViewController.swift"; sourceTree = "<group>"; };
+		208F9FA41DF6148E00DED39C /* SaveWorkOrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaveWorkOrderRequest.swift; path = Request/SaveWorkOrderRequest.swift; sourceTree = "<group>"; };
+		208F9FA61DF6199D00DED39C /* FbDestLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbDestLocation.swift; path = "Fishbowl Objects/FbDestLocation.swift"; sourceTree = "<group>"; };
+		20945EC91DA7541800FC93CB /* Delivery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Delivery.storyboard; sourceTree = "<group>"; };
+		20945ECF1DA759F300FC93CB /* Receiving.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Receiving.storyboard; sourceTree = "<group>"; };
+		20945ED41DA75B9B00FC93CB /* WorkOrder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WorkOrder.storyboard; sourceTree = "<group>"; };
+		20945ED91DA75E3000FC93CB /* LocationChooser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocationChooser.storyboard; sourceTree = "<group>"; };
+		20945EE31DA763C800FC93CB /* Picking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Picking.storyboard; sourceTree = "<group>"; };
+		2097C20C1E43EB6300E23FC8 /* ButtonGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonGrid.swift; path = Utils/ButtonGrid.swift; sourceTree = "<group>"; };
+		209BF2661E1F419B00D7A414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Acknowledgements.storyboard; sourceTree = "<group>"; };
+		20A18C141DE4AE7800E7F82C /* FbUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbUser.swift; path = "Fishbowl Objects/FbUser.swift"; sourceTree = "<group>"; };
+		20A18C161DE4B23E00E7F82C /* FbLocationGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FbLocationGroup.swift; sourceTree = "<group>"; };
+		20A1974C1D546FAB00B17682 /* ActivityIndicatorWithText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityIndicatorWithText.swift; path = Utils/ActivityIndicatorWithText.swift; sourceTree = "<group>"; };
+		20A3E6721D9B903100185B44 /* PartUomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PartUomCell.swift; path = "View Controllers/PartUomCell.swift"; sourceTree = "<group>"; };
+		20A3E6741D9B906B00185B44 /* PartUpcCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PartUpcCell.swift; path = "View Controllers/PartUpcCell.swift"; sourceTree = "<group>"; };
+		20A3E6761D9B908C00185B44 /* PartImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PartImageCell.swift; path = "View Controllers/PartImageCell.swift"; sourceTree = "<group>"; };
+		20A3E6781D9B90A800185B44 /* PartInventoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PartInventoryCell.swift; path = "View Controllers/PartInventoryCell.swift"; sourceTree = "<group>"; };
+		20A3E67A1D9BA7AE00185B44 /* FbInventoryQuantity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FbInventoryQuantity.swift; sourceTree = "<group>"; };
+		20A3E67C1D9BAEC700185B44 /* FbInventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbInventory.swift; path = "Fishbowl Objects/FbInventory.swift"; sourceTree = "<group>"; };
+		20A506491E367069007D3A0F /* AsyncSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AsyncSocket.swift; path = Utils/AsyncSocket.swift; sourceTree = "<group>"; };
+		20A5CE321D8BB33300CFA571 /* MoveRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoveRequest.swift; path = Request/MoveRequest.swift; sourceTree = "<group>"; };
+		20A5CE341D8E665900CFA571 /* CycleCountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CycleCountRequest.swift; path = Request/CycleCountRequest.swift; sourceTree = "<group>"; };
+		20B613101DADFEB700BAFB7E /* FbPick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbPick.swift; path = "Fishbowl Objects/FbPick.swift"; sourceTree = "<group>"; };
+		20B613121DAE00FC00BAFB7E /* FbPickOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbPickOrder.swift; path = "Fishbowl Objects/FbPickOrder.swift"; sourceTree = "<group>"; };
+		20B613191DAF676600BAFB7E /* ReceiveOrderPartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiveOrderPartCell.swift; path = "View Controllers/ReceiveOrderPartCell.swift"; sourceTree = "<group>"; };
+		20B6131B1DAF6AE800BAFB7E /* ReceiptRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceiptRequest.swift; path = Request/ReceiptRequest.swift; sourceTree = "<group>"; };
+		20B6131D1DAF6CC100BAFB7E /* FbReceiveTicket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbReceiveTicket.swift; path = "Fishbowl Objects/FbReceiveTicket.swift"; sourceTree = "<group>"; };
+		20B6131F1DAF816100BAFB7E /* FbReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbReceipt.swift; path = "Fishbowl Objects/FbReceipt.swift"; sourceTree = "<group>"; };
+		20B613211DAF830600BAFB7E /* FbReceiveItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbReceiveItem.swift; path = "Fishbowl Objects/FbReceiveItem.swift"; sourceTree = "<group>"; };
+		20B613231DB0351300BAFB7E /* FbReceivedReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbReceivedReceipt.swift; path = "Fishbowl Objects/FbReceivedReceipt.swift"; sourceTree = "<group>"; };
+		20B7562A1E2F2BE500EAE6B0 /* FbLoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbLoginResponse.swift; path = "Fishbowl Objects/FbLoginResponse.swift"; sourceTree = "<group>"; };
+		20B9443F1D7F8B5E00AC1079 /* ShipmentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShipmentRequest.swift; path = Request/ShipmentRequest.swift; sourceTree = "<group>"; };
+		20BBE6821D6ED1DF00D03346 /* ShipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShipViewController.swift; path = "View Controllers/ShipViewController.swift"; sourceTree = "<group>"; };
+		20BBE6841D6ED4C900D03346 /* ShipOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShipOrderCell.swift; path = "View Controllers/ShipOrderCell.swift"; sourceTree = "<group>"; };
+		20BC69251DECD8DC00CCAA14 /* FbUomConversions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbUomConversions.swift; path = "Fishbowl Objects/FbUomConversions.swift"; sourceTree = "<group>"; };
+		20C1F2081E1575F1003E5817 /* PluginSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PluginSettings.swift; path = Utils/PluginSettings.swift; sourceTree = "<group>"; };
+		20C206401D77DBA7003E1FF4 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerViewController.swift; path = "View Controllers/ScannerViewController.swift"; sourceTree = "<group>"; };
+		20C206421D77E0CE003E1FF4 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Utils/Protocols.swift; sourceTree = "<group>"; };
+		20C4C1831D56E7D300DB6EBE /* UOMListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UOMListRequest.swift; path = Request/UOMListRequest.swift; sourceTree = "<group>"; };
+		20C4C1851D56ED1200DB6EBE /* LocationListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationListRequest.swift; path = Request/LocationListRequest.swift; sourceTree = "<group>"; };
+		20C57EC21D9E0847000B37F8 /* SaveImageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaveImageRequest.swift; path = Request/SaveImageRequest.swift; sourceTree = "<group>"; };
+		20C7993F1DD27B1A00EE5755 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		20C800FF1DCA431100628E01 /* PackPartTrackingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PackPartTrackingTableViewController.swift; path = "View Controllers/PackPartTrackingTableViewController.swift"; sourceTree = "<group>"; };
+		20C801011DCA596100628E01 /* SerialNumberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SerialNumberTableViewCell.swift; path = "View Controllers/SerialNumberTableViewCell.swift"; sourceTree = "<group>"; };
+		20CC52FB1D6519DA005D1276 /* FbUom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbUom.swift; path = "Fishbowl Objects/FbUom.swift"; sourceTree = "<group>"; };
+		20CC52FD1D6521A3005D1276 /* FbUomConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbUomConversion.swift; path = "Fishbowl Objects/FbUomConversion.swift"; sourceTree = "<group>"; };
+		20CC52FF1D652B05005D1276 /* FbLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbLocation.swift; path = "Fishbowl Objects/FbLocation.swift"; sourceTree = "<group>"; };
+		20D869B91D952B300017B7FA /* PartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PartViewController.swift; path = "View Controllers/PartViewController.swift"; sourceTree = "<group>"; };
+		20D9E2291D8E789C00CC349E /* ScannableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannableTextField.swift; path = "View Controllers/ScannableTextField.swift"; sourceTree = "<group>"; };
+		20D9E22B1D8E7CB000CC349E /* LocationCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationCache.swift; path = Utils/LocationCache.swift; sourceTree = "<group>"; };
+		20DB4CF41D9C84BF00213AF7 /* PickPartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickPartTableViewController.swift; path = "View Controllers/PickPartTableViewController.swift"; sourceTree = "<group>"; };
+		20DBB4611D5300CA00424FAA /* PickItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickItemCell.swift; path = "View Controllers/PickItemCell.swift"; sourceTree = "<group>"; };
+		20DCD1D81D7A8617004A740B /* DigitalBeep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = DigitalBeep.mp3; path = Sounds/DigitalBeep.mp3; sourceTree = "<group>"; };
+		20DDC2721D813409002CC46F /* PackOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PackOrderCell.swift; path = "View Controllers/PackOrderCell.swift"; sourceTree = "<group>"; };
+		20DDC2741D813F37002CC46F /* FbShipSearchItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbShipSearchItem.swift; path = "Fishbowl Objects/FbShipSearchItem.swift"; sourceTree = "<group>"; };
+		20DDC2761D8145C8002CC46F /* FbPickSearchItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbPickSearchItem.swift; path = "Fishbowl Objects/FbPickSearchItem.swift"; sourceTree = "<group>"; };
+		20DDC2781D8162C1002CC46F /* FbWorkOrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbWorkOrderItem.swift; path = "Fishbowl Objects/FbWorkOrderItem.swift"; sourceTree = "<group>"; };
+		20E402631DC84A7D00841896 /* FbShipping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbShipping.swift; path = "Fishbowl Objects/FbShipping.swift"; sourceTree = "<group>"; };
+		20E402651DC84C7700841896 /* FbCartons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbCartons.swift; path = "Fishbowl Objects/FbCartons.swift"; sourceTree = "<group>"; };
+		20E402671DC84D0D00841896 /* FbState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbState.swift; path = "Fishbowl Objects/FbState.swift"; sourceTree = "<group>"; };
+		20E402691DC84D7800841896 /* FbCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbCountry.swift; path = "Fishbowl Objects/FbCountry.swift"; sourceTree = "<group>"; };
+		20E4026B1DC84DAD00841896 /* FbAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbAddress.swift; path = "Fishbowl Objects/FbAddress.swift"; sourceTree = "<group>"; };
+		20E413891E1F0BE800DD46F9 /* Pods-Fishbowl GO-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = "Pods-Fishbowl GO-acknowledgements.markdown"; path = "../Pods/Target Support Files/Pods-Fishbowl GO/Pods-Fishbowl GO-acknowledgements.markdown"; sourceTree = "<group>"; };
+		20E4138C1E1F0DED00DD46F9 /* AcknowledgementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AcknowledgementsViewController.swift; path = "View Controllers/AcknowledgementsViewController.swift"; sourceTree = "<group>"; };
+		20E587111D8913E3009F25B5 /* LocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationTableViewController.swift; path = "View Controllers/LocationTableViewController.swift"; sourceTree = "<group>"; };
+		20E7603C1DAC53980042864A /* ChooseSerialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseSerialsViewController.swift; path = "View Controllers/ChooseSerialsViewController.swift"; sourceTree = "<group>"; };
+		20E87B851D30893A00DE2162 /* CompatibleRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompatibleRequest.swift; path = Request/CompatibleRequest.swift; sourceTree = "<group>"; };
+		20E913D61D767D1300EC1DB7 /* ModuleSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModuleSettings.swift; path = Utils/ModuleSettings.swift; sourceTree = "<group>"; };
+		20E913D81D76910500EC1DB7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
+		20E922FD1D86736300803EC3 /* SavePickRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SavePickRequest.swift; path = Request/SavePickRequest.swift; sourceTree = "<group>"; };
+		20E9CD271D9513FA007B6AF1 /* FbShipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FbShipment.swift; path = "Fishbowl Objects/FbShipment.swift"; sourceTree = "<group>"; };
+		20F0EEC91DD4F10E00544DB0 /* SaveShipmentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaveShipmentRequest.swift; path = Request/SaveShipmentRequest.swift; sourceTree = "<group>"; };
+		20F275E71D30551300B2B37E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = "View Controllers/AboutViewController.swift"; sourceTree = "<group>"; };
+		20F275E81D30551300B2B37E /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = "View Controllers/MainMenuViewController.swift"; sourceTree = "<group>"; };
+		20F275E91D30551300B2B37E /* PackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PackViewController.swift; path = "View Controllers/PackViewController.swift"; sourceTree = "<group>"; };
+		20F275EA1D30551300B2B37E /* PickOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickOrderCell.swift; path = "View Controllers/PickOrderCell.swift"; sourceTree = "<group>"; };
+		20F275EB1D30551300B2B37E /* PickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickViewController.swift; path = "View Controllers/PickViewController.swift"; sourceTree = "<group>"; };
+		20F734831E25510A00AA878F /* QuantityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuantityCell.swift; path = Views/QuantityCell.swift; sourceTree = "<group>"; };
+		20F734841E25510A00AA878F /* QuantityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuantityCell.xib; path = Views/QuantityCell.xib; sourceTree = "<group>"; };
+		20F7BAD91D62EF12000A4FEC /* Fishbowl-Icon-180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fishbowl-Icon-180x180.png"; sourceTree = "<group>"; };
+		20F8E71B1E1DD08400CD9359 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = "Fishbowl GO/Settings.bundle"; sourceTree = "<group>"; };
+		20FF8D5D1D7E965D003B785F /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginRequest.swift; path = Request/LoginRequest.swift; sourceTree = "<group>"; };
+		20FF8D5F1D7E9815003B785F /* LogoutRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogoutRequest.swift; path = Request/LogoutRequest.swift; sourceTree = "<group>"; };
+		20FF8D611D7EA315003B785F /* WorkOrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkOrderRequest.swift; path = Request/WorkOrderRequest.swift; sourceTree = "<group>"; };
+		20FF8D631D7EA3FA003B785F /* WorkOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkOrderViewController.swift; path = "View Controllers/WorkOrderViewController.swift"; sourceTree = "<group>"; };
+		20FF8D651D7EA7BF003B785F /* WorkOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkOrderCell.swift; path = "View Controllers/WorkOrderCell.swift"; sourceTree = "<group>"; };
+		54F59E364A3E23B869BD9FC5 /* Pods_Fishbowl_GO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fishbowl_GO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57465B34BB46078331786D1B /* Pods-Fishbowl GO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fishbowl GO.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fishbowl GO/Pods-Fishbowl GO.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20885EE31D2F7B23008D05B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B911211DA3233BE7826B1C /* Pods_Fishbowl_GO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06B9D48B23902E31ED74F684 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B87201C5FBBCDDB2EA51046 /* Pods-Fishbowl GO.debug.xcconfig */,
+				57465B34BB46078331786D1B /* Pods-Fishbowl GO.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1F3A27A415D0562497F9F8D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54F59E364A3E23B869BD9FC5 /* Pods_Fishbowl_GO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2052AC711D2F7F9900A862C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20E4138B1E1F0C1600DD46F9 /* Acknowledgements */,
+				20DCD1D71D7A85EA004A740B /* Sounds */,
+				20692D5B1D6C2EEA00A6F218 /* Images */,
+				2056C2AD1D5D46C00005AF2B /* Fishbowl Objects */,
+				2052ACA81D2F809D00A862C1 /* Request */,
+				2052ACA71D2F809700A862C1 /* Utils */,
+				2052AC961D2F805B00A862C1 /* White Icons */,
+				2052AC7B1D2F803F00A862C1 /* Dark Icons */,
+				2052AC721D2F7FA200A862C1 /* Logos */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2052AC721D2F7FA200A862C1 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				20692D5C1D6C2F3200A6F218 /* Fishbowl_Logo.png */,
+				2052AC771D2F7FF200A862C1 /* header_logo_black.png */,
+				2052AC781D2F7FF200A862C1 /* header_logo.png */,
+				20F7BAD91D62EF12000A4FEC /* Fishbowl-Icon-180x180.png */,
+				2020490D1D66861B00640242 /* Fishbowl-Icon-180x180-bw.jpg */,
+				2020490E1D66861B00640242 /* Fishbowl-Icon-180x180-lightgray.jpg */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		2052AC7B1D2F803F00A862C1 /* Dark Icons */ = {
+			isa = PBXGroup;
+			children = (
+				2052AC7C1D2F805500A862C1 /* account-logout-32.png */,
+				2052AC7D1D2F805500A862C1 /* account-logout-48.png */,
+				2052AC7E1D2F805500A862C1 /* cycle.png */,
+				2052AC7F1D2F805500A862C1 /* edit.png */,
+				2052AC801D2F805500A862C1 /* ic_barcode_black.png */,
+				2052AC811D2F805500A862C1 /* ic_info_black_24dp-large.png */,
+				2052AC821D2F805500A862C1 /* ic_info_black_24dp.png */,
+				2052AC831D2F805500A862C1 /* move.png */,
+				2052AC841D2F805500A862C1 /* open.png */,
+				20692D551D6C107C00A6F218 /* open-96.png */,
+				20692D511D6C105E00A6F218 /* pick-96.png */,
+				20692D521D6C105E00A6F218 /* pick-144.png */,
+				2052AC851D2F805500A862C1 /* pack.png */,
+				2052AC871D2F805500A862C1 /* receive.png */,
+				2052AC881D2F805500A862C1 /* ship.png */,
+				20692D4F1D6BFDBF00A6F218 /* locked-20.png */,
+				20692D451D6950AF00A6F218 /* locked-30.png */,
+				20692D491D69517F00A6F218 /* unlocked-20.png */,
+				20692D471D6950FA00A6F218 /* unlocked-30.png */,
+			);
+			name = "Dark Icons";
+			sourceTree = "<group>";
+		};
+		2052AC961D2F805B00A862C1 /* White Icons */ = {
+			isa = PBXGroup;
+			children = (
+				2052AC971D2F808700A862C1 /* cycle_large.png */,
+				2052AC981D2F808700A862C1 /* move_large.png */,
+				2052AC991D2F808700A862C1 /* pack_large.png */,
+				2052AC9A1D2F808700A862C1 /* part_large.png */,
+				2052AC9B1D2F808700A862C1 /* pick_large.png */,
+				2052AC9C1D2F808700A862C1 /* receive_large.png */,
+				2052AC9D1D2F808700A862C1 /* ship_large.png */,
+				2052AC9E1D2F808700A862C1 /* work_order_large.png */,
+			);
+			name = "White Icons";
+			sourceTree = "<group>";
+		};
+		2052ACA71D2F809700A862C1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				20A1974C1D546FAB00B17682 /* ActivityIndicatorWithText.swift */,
+				2097C20C1E43EB6300E23FC8 /* ButtonGrid.swift */,
+				2036CB2E1D827F5E00995284 /* CheckBox.swift */,
+				201160811D545CF40066028B /* Compatibility.swift */,
+				2052ACA91D2F80F600A862C1 /* Connection.swift */,
+				206879A71E31F4BD00D4B325 /* DebugSocket.swift */,
+				20A506491E367069007D3A0F /* AsyncSocket.swift */,
+				20C1F2081E1575F1003E5817 /* PluginSettings.swift */,
+				202E420D1D305DE200E6AA46 /* Constant.swift */,
+				2052ACAA1D2F80F600A862C1 /* Extensions.swift */,
+				2052ACAB1D2F80F600A862C1 /* ImageFromText.swift */,
+				2052ACAC1D2F80F600A862C1 /* JsonSerializer.swift */,
+				2052ACAD1D2F80F600A862C1 /* JsonSerializerSwift.h */,
+				20D9E22B1D8E7CB000CC349E /* LocationCache.swift */,
+				2016A2431D88C4CB00643D12 /* LockButton.swift */,
+				20E913D61D767D1300EC1DB7 /* ModuleSettings.swift */,
+				20C206421D77E0CE003E1FF4 /* Protocols.swift */,
+				20178AF91E2413E400694F73 /* SwiftCache.swift */,
+				205E42EF1D780FF800A284D8 /* Utils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		2052ACA81D2F809D00A862C1 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				204C54921F54A18E006AFF5B /* AddInventoryRequest.swift */,
+				2052ACB21D2F813300A862C1 /* CarrierListRequest.swift */,
+				20E87B851D30893A00DE2162 /* CompatibleRequest.swift */,
+				20A5CE341D8E665900CFA571 /* CycleCountRequest.swift */,
+				2052ACB31D2F813300A862C1 /* FBRequest.swift */,
+				2052ACB41D2F813300A862C1 /* FBStatus.swift */,
+				200B7E3A1D97A27D003FEE7A /* InventoryQuantityRequest.swift */,
+				20C4C1851D56ED1200DB6EBE /* LocationListRequest.swift */,
+				20FF8D5D1D7E965D003B785F /* LoginRequest.swift */,
+				20FF8D5F1D7E9815003B785F /* LogoutRequest.swift */,
+				20A5CE321D8BB33300CFA571 /* MoveRequest.swift */,
+				20692D571D6C133E00A6F218 /* PartGetRequest.swift */,
+				2052ACB51D2F813300A862C1 /* PickListRequest.swift */,
+				2041DB631D505B7000BC2733 /* PickRequest.swift */,
+				2079C79F1DB60A29007E271D /* PrintReportRequest.swift */,
+				20B6131B1DAF6AE800BAFB7E /* ReceiptRequest.swift */,
+				203D9FF01D53041000662D8F /* PluginDataRequest.swift */,
+				200A16331D755FD6006EAF5F /* ReceivingListRequest.swift */,
+				20E922FD1D86736300803EC3 /* SavePickRequest.swift */,
+				208F9FA41DF6148E00DED39C /* SaveWorkOrderRequest.swift */,
+				20F0EEC91DD4F10E00544DB0 /* SaveShipmentRequest.swift */,
+				200B7E381D97856C003FEE7A /* SaveUpcRequest.swift */,
+				208E0EDF1DB3011400391C89 /* SaveReceiptRequest.swift */,
+				20C57EC21D9E0847000B37F8 /* SaveImageRequest.swift */,
+				2032E18B1D6EDA4500631E4E /* ShipListRequest.swift */,
+				20B9443F1D7F8B5E00AC1079 /* ShipmentRequest.swift */,
+				2083021F1D752D790003D3AD /* ShipOrderRequest.swift */,
+				20C4C1831D56E7D300DB6EBE /* UOMListRequest.swift */,
+				20FF8D611D7EA315003B785F /* WorkOrderRequest.swift */,
+				205FD84E1DE4272800E35168 /* WorkOrderListRequest.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		2056C2AD1D5D46C00005AF2B /* Fishbowl Objects */ = {
+			isa = PBXGroup;
+			children = (
+				20E4026B1DC84DAD00841896 /* FbAddress.swift */,
+				207D13461DF72AE10074BDE3 /* FbAvailablePickLocations.swift */,
+				2056C2AE1D5D47330005AF2B /* FbCarrier.swift */,
+				206AD70B1DB7606C00442E60 /* FbCarton.swift */,
+				20E402651DC84C7700841896 /* FbCartons.swift */,
+				2018F87F1DE4EA6900D87536 /* FbConsumeItem.swift */,
+				2018F87D1DE4E93400D87536 /* FbConsumeItems.swift */,
+				20E402691DC84D7800841896 /* FbCountry.swift */,
+				207687581DC8FF6400677145 /* FbCustomField.swift */,
+				2076875E1DC9031F00677145 /* FbCustomFields.swift */,
+				2076875A1DC9015900677145 /* FbCustomList.swift */,
+				2076875C1DC9022300677145 /* FbCustomListItem.swift */,
+				208F9FA61DF6199D00DED39C /* FbDestLocation.swift */,
+				203135391DBEC9E500935C16 /* FbDestinationTag.swift */,
+				20A3E67C1D9BAEC700185B44 /* FbInventory.swift */,
+				20A3E67A1D9BA7AE00185B44 /* FbInventoryQuantity.swift */,
+				20CC52FF1D652B05005D1276 /* FbLocation.swift */,
+				20270AB21DFB5BFB00FEF63F /* FbLocationList.swift */,
+				20B7562A1E2F2BE500EAE6B0 /* FbLoginResponse.swift */,
+				20A18C161DE4B23E00E7F82C /* FbLocationGroup.swift */,
+				20270AB41DFB5CC600FEF63F /* FbLocationGroupList.swift */,
+				20692D591D6C18F900A6F218 /* FbPart.swift */,
+				206F18851DA225FC00E20C66 /* FbPartTracking.swift */,
+				20B613101DADFEB700BAFB7E /* FbPick.swift */,
+				2023E7481D6448F40072843E /* FbPickItem.swift */,
+				2031353B1DBEE98200935C16 /* FbPickItems.swift */,
+				20B613121DAE00FC00BAFB7E /* FbPickOrder.swift */,
+				2031353F1DBF0C5100935C16 /* FbPartTrackingList.swift */,
+				2031353D1DBEEE6E00935C16 /* FbPickOrders.swift */,
+				20DDC2761D8145C8002CC46F /* FbPickSearchItem.swift */,
+				20B6131D1DAF6CC100BAFB7E /* FbReceiveTicket.swift */,
+				20B6131F1DAF816100BAFB7E /* FbReceipt.swift */,
+				20B613231DB0351300BAFB7E /* FbReceivedReceipt.swift */,
+				20629EBE1E14257300962FC2 /* FbReceivedReceipts.swift */,
+				205D43F81E033995005F9A4C /* FbReceiptItems.swift */,
+				20B613211DAF830600BAFB7E /* FbReceiveItem.swift */,
+				208288A41DC3C823003AED5D /* FbSerialBox.swift */,
+				208288A61DC3C8EC003AED5D /* FbSerialBoxList.swift */,
+				208288A01DC3C3A5003AED5D /* FbSerialNum.swift */,
+				208288A21DC3C5DF003AED5D /* FbSerialNumList.swift */,
+				20E9CD271D9513FA007B6AF1 /* FbShipment.swift */,
+				20E402631DC84A7D00841896 /* FbShipping.swift */,
+				206AD70D1DB7639900442E60 /* FbShippingItem.swift */,
+				2036D33C1DD642E80057AF9D /* FbShippingItems.swift */,
+				20DDC2741D813F37002CC46F /* FbShipSearchItem.swift */,
+				20E402671DC84D0D00841896 /* FbState.swift */,
+				203135371DBEC5CB00935C16 /* FbTag.swift */,
+				203135411DBF0E3A00935C16 /* FbTracking.swift */,
+				206BC7BE1DB87C5B00ED05AC /* FbTrackingItem.swift */,
+				20CC52FB1D6519DA005D1276 /* FbUom.swift */,
+				20CC52FD1D6521A3005D1276 /* FbUomConversion.swift */,
+				20BC69251DECD8DC00CCAA14 /* FbUomConversions.swift */,
+				20A18C141DE4AE7800E7F82C /* FbUser.swift */,
+				20270AB01DFB584A00FEF63F /* FbUserList.swift */,
+				205FD8501DE42C0A00E35168 /* FbWorkOrder.swift */,
+				205FD8521DE432B300E35168 /* FbWorkOrderItems.swift */,
+				205FD8541DE4342F00E35168 /* FbWOItem.swift */,
+				20DDC2781D8162C1002CC46F /* FbWorkOrderItem.swift */,
+			);
+			name = "Fishbowl Objects";
+			sourceTree = "<group>";
+		};
+		20692D5B1D6C2EEA00A6F218 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2079C79D1DB607C2007E271D /* splash-intro-blur-750x1334.png */,
+				2036CB311D8281EC00995284 /* checkbox-icon-light-checked.png */,
+				2036CB321D8281EC00995284 /* checkbox-icon-light-unchecked.png */,
+				20757DFB1D7E3A1D0086ED10 /* Fishbowl-GO.png */,
+				20692D5E1D6C2F4200A6F218 /* fishbowl-launch-screen.jpg */,
+				20692D601D6C30D900A6F218 /* fishbowl-background-screen.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		20885EDD1D2F7B23008D05B8 = {
+			isa = PBXGroup;
+			children = (
+				20F8E71B1E1DD08400CD9359 /* Settings.bundle */,
+				20C7993F1DD27B1A00EE5755 /* README.md */,
+				20885EE81D2F7B23008D05B8 /* Fishbowl GO */,
+				20885EE71D2F7B23008D05B8 /* Products */,
+				06B9D48B23902E31ED74F684 /* Pods */,
+				1F3A27A415D0562497F9F8D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20885EE71D2F7B23008D05B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20885EE61D2F7B23008D05B8 /* Fishbowl GO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20885EE81D2F7B23008D05B8 /* Fishbowl GO */ = {
+			isa = PBXGroup;
+			children = (
+				2052AC711D2F7F9900A862C1 /* Resources */,
+				20945ECB1DA7581C00FC93CB /* Storyboards */,
+				20B613141DAF4DB400BAFB7E /* Views */,
+				20F275E61D30540F00B2B37E /* View Controllers */,
+				20885EE91D2F7B23008D05B8 /* AppDelegate.swift */,
+				20885EEB1D2F7B23008D05B8 /* ViewController.swift */,
+				20885EF81D2F7B23008D05B8 /* Info.plist */,
+				20885EF31D2F7B23008D05B8 /* Assets.xcassets */,
+				20885EF01D2F7B23008D05B8 /* Fishbowl_GO.xcdatamodeld */,
+			);
+			path = "Fishbowl GO";
+			sourceTree = "<group>";
+		};
+		20945ECB1DA7581C00FC93CB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				204C548F1F50BC89006AFF5B /* AddInventory.storyboard */,
+				20885EF51D2F7B23008D05B8 /* LaunchScreen.storyboard */,
+				20885EED1D2F7B23008D05B8 /* Main.storyboard */,
+				209BF2651E1F419B00D7A414 /* Acknowledgements.storyboard */,
+				20874BA31DA8B90800A36767 /* Cycle.storyboard */,
+				20945EC91DA7541800FC93CB /* Delivery.storyboard */,
+				20945ED91DA75E3000FC93CB /* LocationChooser.storyboard */,
+				20874B991DA8B61F00A36767 /* Move.storyboard */,
+				20874B9B1DA8B78700A36767 /* Packing.storyboard */,
+				20874BA11DA8B8B900A36767 /* Part.storyboard */,
+				206DA3B81E0846AB00B2FF7C /* PartWithTracking.storyboard */,
+				20945EE31DA763C800FC93CB /* Picking.storyboard */,
+				20945ECF1DA759F300FC93CB /* Receiving.storyboard */,
+				20874B9D1DA8B82C00A36767 /* Scanner.storyboard */,
+				204C548D1F50B8A2006AFF5B /* Scrap.storyboard */,
+				20874B9F1DA8B86A00A36767 /* Settings.storyboard */,
+				20874B971DA8785B00A36767 /* Shipping.storyboard */,
+				20945ED41DA75B9B00FC93CB /* WorkOrder.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		20B613141DAF4DB400BAFB7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				208646191E3BCF0000F2B253 /* BigGoButton.swift */,
+				208878FF1E249A5100D62F42 /* ScannableLocationCell.swift */,
+				208879001E249A5100D62F42 /* ScannableLocationCell.xib */,
+				206E3B471DDF7814008862E9 /* PickOrderTableView.swift */,
+				208879031E24A57300D62F42 /* ScannablePartCell.swift */,
+				208879041E24A57300D62F42 /* ScannablePartCell.xib */,
+				20F734831E25510A00AA878F /* QuantityCell.swift */,
+				20F734841E25510A00AA878F /* QuantityCell.xib */,
+				200187951E25D53100B0886B /* SerialNumberAdderCell.swift */,
+				200187961E25D53100B0886B /* SerialNumberAdderCell.xib */,
+				208F380F1E2824A500CACF97 /* TrackingCell.swift */,
+				208F38101E2824A500CACF97 /* TrackingCell.xib */,
+				204C54941F54A7EC006AFF5B /* NoteCell.swift */,
+				204C54951F54A7EC006AFF5B /* NoteCell.xib */,
+				204C549A1F54AE39006AFF5B /* UnitCostCell.swift */,
+				204C549B1F54AE39006AFF5B /* UnitCostCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		20DCD1D71D7A85EA004A740B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				20DCD1D81D7A8617004A740B /* DigitalBeep.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		20E4138B1E1F0C1600DD46F9 /* Acknowledgements */ = {
+			isa = PBXGroup;
+			children = (
+				206879A41E318B0400D4B325 /* RPMConsultingServices-acknowledgements.markdown */,
+				20E413891E1F0BE800DD46F9 /* Pods-Fishbowl GO-acknowledgements.markdown */,
+			);
+			name = Acknowledgements;
+			sourceTree = "<group>";
+		};
+		20F275E61D30540F00B2B37E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				20F275E71D30551300B2B37E /* AboutViewController.swift */,
+				20E4138C1E1F0DED00DD46F9 /* AcknowledgementsViewController.swift */,
+				204C54981F54AAAF006AFF5B /* AddInventoryTableViewController.swift */,
+				20E7603C1DAC53980042864A /* ChooseSerialsViewController.swift */,
+				20313D521E2DE6F400734A09 /* CycleInventoryTableViewController.swift */,
+				2078FA0B1D8173DE0099565F /* DeliveryCell.swift */,
+				2078FA091D8171C30099565F /* DeliveryVewController.swift */,
+				201742521D950A7200A5B513 /* DeliverySignatureViewController.swift */,
+				200B7E3C1D97B526003FEE7A /* InventoryCell.swift */,
+				20E587111D8913E3009F25B5 /* LocationTableViewController.swift */,
+				206A76031D892D5F009E9E53 /* LocationCell.swift */,
+				206A76051D8938FC009E9E53 /* LocationTextField.swift */,
+				20F275E81D30551300B2B37E /* MainMenuViewController.swift */,
+				208879071E24A75200D62F42 /* MoveInventoryTableViewController.swift */,
+				201CD6F41DCA6F5900998302 /* PackCellSerial.swift */,
+				201CD6F61DCA766E00998302 /* PackCellPart.swift */,
+				2008F3151DDBA6EE00878542 /* PackCellQuantity.swift */,
+				2008F3171DDBAD1D00878542 /* PackCellTracking.swift */,
+				20DDC2721D813409002CC46F /* PackOrderCell.swift */,
+				206AD70F1DB7DC0200442E60 /* PackPartStandardTableViewController.swift */,
+				20C800FF1DCA431100628E01 /* PackPartTrackingTableViewController.swift */,
+				2064C64E1DB6E74D00C246F0 /* PackOrderTableViewController.swift */,
+				20F275E91D30551300B2B37E /* PackViewController.swift */,
+				20047BC01D9B7FE800716383 /* PartDescriptionCell.swift */,
+				20A3E6761D9B908C00185B44 /* PartImageCell.swift */,
+				20216D1D1D9D105A00AD2F5B /* PartImageViewController.swift */,
+				20A3E6781D9B90A800185B44 /* PartInventoryCell.swift */,
+				206DA3BA1E0848B600B2FF7C /* PartTrackTableViewController.swift */,
+				20A3E6721D9B903100185B44 /* PartUomCell.swift */,
+				20A3E6741D9B906B00185B44 /* PartUpcCell.swift */,
+				20D869B91D952B300017B7FA /* PartViewController.swift */,
+				206F18891DA24BC500E20C66 /* PickCellPart.swift */,
+				206F188B1DA2F16600E20C66 /* PickCellLocation.swift */,
+				206F188D1DA2F19A00E20C66 /* PickCellQuantity.swift */,
+				206F188F1DA2F1D200E20C66 /* PickCellTracking.swift */,
+				20874BA51DA8C54700A36767 /* PickCellTrackSerial.swift */,
+				20F275EA1D30551300B2B37E /* PickOrderCell.swift */,
+				2041DB651D505D0900BC2733 /* PickOrderViewController.swift */,
+				20DB4CF41D9C84BF00213AF7 /* PickPartTableViewController.swift */,
+				208D3CCF1DAB89CD00446858 /* PickPartTrackSerialTableViewController.swift */,
+				206F18871DA249D100E20C66 /* PickPartTrackTableViewController.swift */,
+				20692D4B1D69526900A6F218 /* PickItemViewController.swift */,
+				20DBB4611D5300CA00424FAA /* PickItemCell.swift */,
+				20F275EB1D30551300B2B37E /* PickViewController.swift */,
+				208302231D754B640003D3AD /* ReceiveOrderCell.swift */,
+				20B613191DAF676600BAFB7E /* ReceiveOrderPartCell.swift */,
+				208302251D754D1D0003D3AD /* ReceiveOrderViewController.swift */,
+				208E0EE11DB4813B00391C89 /* ReceivePartTableViewController.swift */,
+				206DA3BC1E0996D000B2FF7C /* ReceivePartTrackTableViewController.swift */,
+				2012BE921EAE56E400DCF960 /* ReceivePartTrackAllTableViewController.swift */,
+				206DA3BE1E09BB2300B2FF7C /* ReceivePartTrackSerialTableViewController.swift */,
+				208302211D75491D0003D3AD /* ReceiveViewController.swift */,
+				20D9E2291D8E789C00CC349E /* ScannableTextField.swift */,
+				20C206401D77DBA7003E1FF4 /* ScannerViewController.swift */,
+				20E913D81D76910500EC1DB7 /* SettingsViewController.swift */,
+				20C801011DCA596100628E01 /* SerialNumberTableViewCell.swift */,
+				20BBE6841D6ED4C900D03346 /* ShipOrderCell.swift */,
+				20BBE6821D6ED1DF00D03346 /* ShipViewController.swift */,
+				20FF8D631D7EA3FA003B785F /* WorkOrderViewController.swift */,
+				20FF8D651D7EA7BF003B785F /* WorkOrderCell.swift */,
+				205FD84C1DE41CBC00E35168 /* WorkOrderDetailViewController.swift */,
+				205FD84A1DE41BD600E35168 /* WorkOrderDetailCell.swift */,
+				20213CC11DF8887A005A2C29 /* WorkOrderCellTracking.swift */,
+				20213CC31DF88976005A2C29 /* WorkOrderCellQuantity.swift */,
+				20213CC51DF889F8005A2C29 /* WorkOrderCellLocation.swift */,
+				20213CC71DF88AC9005A2C29 /* WorkOrderCellPart.swift */,
+				208F9F9E1DF5DFDF00DED39C /* WorkOrderFinishTableViewController.swift */,
+				208F9FA01DF5E0BE00DED39C /* WorkOrderFinishSerialTableViewController.swift */,
+				208F9FA21DF5E0F000DED39C /* WorkOrderFinishTrackingTableViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20885EE51D2F7B23008D05B8 /* Fishbowl GO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20885EFB1D2F7B23008D05B8 /* Build configuration list for PBXNativeTarget "Fishbowl GO" */;
+			buildPhases = (
+				1AC61FFD7B0D281243287E16 /* [CP] Check Pods Manifest.lock */,
+				20885EE21D2F7B23008D05B8 /* Sources */,
+				20885EE31D2F7B23008D05B8 /* Frameworks */,
+				20885EE41D2F7B23008D05B8 /* Resources */,
+				780F8E693E93D2DD78B65E76 /* [CP] Embed Pods Frameworks */,
+				6651D1D7C13F94C284CA64CA /* [CP] Copy Pods Resources */,
+				20629EC01E14715B00962FC2 /* Increment Build */,
+				20F8E71D1E1DF76C00CD9359 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fishbowl GO";
+			productName = "Fishbowl GO";
+			productReference = 20885EE61D2F7B23008D05B8 /* Fishbowl GO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20885EDE1D2F7B23008D05B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "RPM Consulting";
+				TargetAttributes = {
+					20885EE51D2F7B23008D05B8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SX2W8LUEW8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 20885EE11D2F7B23008D05B8 /* Build configuration list for PBXProject "Fishbowl GO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20885EDD1D2F7B23008D05B8;
+			productRefGroup = 20885EE71D2F7B23008D05B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20885EE51D2F7B23008D05B8 /* Fishbowl GO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20885EE41D2F7B23008D05B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E4138A1E1F0BE800DD46F9 /* Pods-Fishbowl GO-acknowledgements.markdown in Resources */,
+				2052AC891D2F805500A862C1 /* account-logout-32.png in Resources */,
+				208879061E24A57300D62F42 /* ScannablePartCell.xib in Resources */,
+				20F8E71C1E1DD08400CD9359 /* Settings.bundle in Resources */,
+				20F734861E25510A00AA878F /* QuantityCell.xib in Resources */,
+				20692D531D6C105E00A6F218 /* pick-96.png in Resources */,
+				20874B981DA8785B00A36767 /* Shipping.storyboard in Resources */,
+				20692D481D6950FA00A6F218 /* unlocked-30.png in Resources */,
+				20885EF71D2F7B23008D05B8 /* LaunchScreen.storyboard in Resources */,
+				20874B9E1DA8B82C00A36767 /* Scanner.storyboard in Resources */,
+				2052ACA61D2F808700A862C1 /* work_order_large.png in Resources */,
+				204C54971F54A7EC006AFF5B /* NoteCell.xib in Resources */,
+				20692D461D6950AF00A6F218 /* locked-30.png in Resources */,
+				204C548E1F50B8A2006AFF5B /* Scrap.storyboard in Resources */,
+				20692D4A1D69517F00A6F218 /* unlocked-20.png in Resources */,
+				20DCD1D91D7A8617004A740B /* DigitalBeep.mp3 in Resources */,
+				2052AC8C1D2F805500A862C1 /* edit.png in Resources */,
+				2052ACA21D2F808700A862C1 /* part_large.png in Resources */,
+				2052AC791D2F7FF200A862C1 /* header_logo_black.png in Resources */,
+				2052ACA31D2F808700A862C1 /* pick_large.png in Resources */,
+				20874BA01DA8B86A00A36767 /* Settings.storyboard in Resources */,
+				2020490F1D66861B00640242 /* Fishbowl-Icon-180x180-bw.jpg in Resources */,
+				2036CB361D8281EC00995284 /* checkbox-icon-light-unchecked.png in Resources */,
+				2052AC8D1D2F805500A862C1 /* ic_barcode_black.png in Resources */,
+				2052AC941D2F805500A862C1 /* receive.png in Resources */,
+				2052ACA41D2F808700A862C1 /* receive_large.png in Resources */,
+				20F7BADA1D62EF12000A4FEC /* Fishbowl-Icon-180x180.png in Resources */,
+				20692D561D6C107C00A6F218 /* open-96.png in Resources */,
+				20692D611D6C30D900A6F218 /* fishbowl-background-screen.jpg in Resources */,
+				20945EE41DA763C800FC93CB /* Picking.storyboard in Resources */,
+				204C549D1F54AE39006AFF5B /* UnitCostCell.xib in Resources */,
+				206DA3B91E0846AB00B2FF7C /* PartWithTracking.storyboard in Resources */,
+				20692D541D6C105E00A6F218 /* pick-144.png in Resources */,
+				20874BA41DA8B90800A36767 /* Cycle.storyboard in Resources */,
+				20945ECA1DA7541800FC93CB /* Delivery.storyboard in Resources */,
+				2052AC8E1D2F805500A862C1 /* ic_info_black_24dp-large.png in Resources */,
+				2052AC901D2F805500A862C1 /* move.png in Resources */,
+				2052AC9F1D2F808700A862C1 /* cycle_large.png in Resources */,
+				209BF2671E1F419B00D7A414 /* Acknowledgements.storyboard in Resources */,
+				20885EF41D2F7B23008D05B8 /* Assets.xcassets in Resources */,
+				2052AC8B1D2F805500A862C1 /* cycle.png in Resources */,
+				20945ED01DA759F300FC93CB /* Receiving.storyboard in Resources */,
+				20692D5F1D6C2F4200A6F218 /* fishbowl-launch-screen.jpg in Resources */,
+				2052ACA11D2F808700A862C1 /* pack_large.png in Resources */,
+				20874BA21DA8B8B900A36767 /* Part.storyboard in Resources */,
+				204C54911F50BC89006AFF5B /* AddInventory.storyboard in Resources */,
+				20945EDA1DA75E3000FC93CB /* LocationChooser.storyboard in Resources */,
+				202049101D66861B00640242 /* Fishbowl-Icon-180x180-lightgray.jpg in Resources */,
+				208879021E249A5100D62F42 /* ScannableLocationCell.xib in Resources */,
+				2052AC951D2F805500A862C1 /* ship.png in Resources */,
+				20885EEF1D2F7B23008D05B8 /* Main.storyboard in Resources */,
+				20874B9A1DA8B61F00A36767 /* Move.storyboard in Resources */,
+				20692D501D6BFDBF00A6F218 /* locked-20.png in Resources */,
+				2052AC8F1D2F805500A862C1 /* ic_info_black_24dp.png in Resources */,
+				200187981E25D53100B0886B /* SerialNumberAdderCell.xib in Resources */,
+				2052AC921D2F805500A862C1 /* pack.png in Resources */,
+				208F38121E2824A500CACF97 /* TrackingCell.xib in Resources */,
+				20692D5D1D6C2F3200A6F218 /* Fishbowl_Logo.png in Resources */,
+				2079C79E1DB607C2007E271D /* splash-intro-blur-750x1334.png in Resources */,
+				2052AC8A1D2F805500A862C1 /* account-logout-48.png in Resources */,
+				20757DFC1D7E3A1D0086ED10 /* Fishbowl-GO.png in Resources */,
+				20945ED51DA75B9B00FC93CB /* WorkOrder.storyboard in Resources */,
+				20874B9C1DA8B78700A36767 /* Packing.storyboard in Resources */,
+				2052AC7A1D2F7FF200A862C1 /* header_logo.png in Resources */,
+				2052ACA51D2F808700A862C1 /* ship_large.png in Resources */,
+				2052ACA01D2F808700A862C1 /* move_large.png in Resources */,
+				2036CB351D8281EC00995284 /* checkbox-icon-light-checked.png in Resources */,
+				2052AC911D2F805500A862C1 /* open.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AC61FFD7B0D281243287E16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		20629EC01E14715B00962FC2 /* Increment Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		20F8E71D1E1DF76C00CD9359 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"/Users/ppearson/dev/xcode/Fishbowl GO/Pods/Target Support Files/Pods-Fishbowl GO/Pods-Fishbowl GO-acknowledgements.plist\" \"/Users/ppearson/dev/xcode/Fishbowl GO/Fishbowl GO/Settings.bundle/Pods-acknowledgements.plist\"";
+		};
+		6651D1D7C13F94C284CA64CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fishbowl GO/Pods-Fishbowl GO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		780F8E693E93D2DD78B65E76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fishbowl GO/Pods-Fishbowl GO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20885EE21D2F7B23008D05B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				208E0EE21DB4813B00391C89 /* ReceivePartTableViewController.swift in Sources */,
+				206F18881DA249D100E20C66 /* PickPartTrackTableViewController.swift in Sources */,
+				20A3E6731D9B903100185B44 /* PartUomCell.swift in Sources */,
+				20B6131C1DAF6AE800BAFB7E /* ReceiptRequest.swift in Sources */,
+				2052ACB61D2F813300A862C1 /* CarrierListRequest.swift in Sources */,
+				205FD8551DE4342F00E35168 /* FbWOItem.swift in Sources */,
+				206DA3BF1E09BB2300B2FF7C /* ReceivePartTrackSerialTableViewController.swift in Sources */,
+				20E4026C1DC84DAD00841896 /* FbAddress.swift in Sources */,
+				20FF8D601D7E9815003B785F /* LogoutRequest.swift in Sources */,
+				205FD84F1DE4272800E35168 /* WorkOrderListRequest.swift in Sources */,
+				2052ACB71D2F813300A862C1 /* FBRequest.swift in Sources */,
+				208302241D754B640003D3AD /* ReceiveOrderCell.swift in Sources */,
+				20F0EECA1DD4F10E00544DB0 /* SaveShipmentRequest.swift in Sources */,
+				2008F3161DDBA6EE00878542 /* PackCellQuantity.swift in Sources */,
+				208D3CD01DAB89CD00446858 /* PickPartTrackSerialTableViewController.swift in Sources */,
+				20C4C1861D56ED1200DB6EBE /* LocationListRequest.swift in Sources */,
+				203135421DBF0E3A00935C16 /* FbTracking.swift in Sources */,
+				208F9FA11DF5E0BE00DED39C /* WorkOrderFinishSerialTableViewController.swift in Sources */,
+				20692D581D6C133E00A6F218 /* PartGetRequest.swift in Sources */,
+				2016A2441D88C4CB00643D12 /* LockButton.swift in Sources */,
+				2076875B1DC9015900677145 /* FbCustomList.swift in Sources */,
+				206A76041D892D5F009E9E53 /* LocationCell.swift in Sources */,
+				204C54991F54AAAF006AFF5B /* AddInventoryTableViewController.swift in Sources */,
+				20A18C171DE4B23E00E7F82C /* FbLocationGroup.swift in Sources */,
+				20E402681DC84D0D00841896 /* FbState.swift in Sources */,
+				208F9F9F1DF5DFDF00DED39C /* WorkOrderFinishTableViewController.swift in Sources */,
+				208302201D752D790003D3AD /* ShipOrderRequest.swift in Sources */,
+				206E3B481DDF7814008862E9 /* PickOrderTableView.swift in Sources */,
+				207687591DC8FF6400677145 /* FbCustomField.swift in Sources */,
+				206F188A1DA24BC500E20C66 /* PickCellPart.swift in Sources */,
+				206DA3BB1E0848B600B2FF7C /* PartTrackTableViewController.swift in Sources */,
+				20A1974D1D546FAB00B17682 /* ActivityIndicatorWithText.swift in Sources */,
+				2052ACAF1D2F80F600A862C1 /* Extensions.swift in Sources */,
+				2031353E1DBEEE6E00935C16 /* FbPickOrders.swift in Sources */,
+				2076875D1DC9022300677145 /* FbCustomListItem.swift in Sources */,
+				20DDC2771D8145C8002CC46F /* FbPickSearchItem.swift in Sources */,
+				20E4138D1E1F0DED00DD46F9 /* AcknowledgementsViewController.swift in Sources */,
+				20885EF21D2F7B23008D05B8 /* Fishbowl_GO.xcdatamodeld in Sources */,
+				20E7603D1DAC53980042864A /* ChooseSerialsViewController.swift in Sources */,
+				2023E7491D6448F40072843E /* FbPickItem.swift in Sources */,
+				2052ACB11D2F80F600A862C1 /* JsonSerializer.swift in Sources */,
+				20BBE6851D6ED4C900D03346 /* ShipOrderCell.swift in Sources */,
+				2036CB2F1D827F5E00995284 /* CheckBox.swift in Sources */,
+				208E0EE01DB3011400391C89 /* SaveReceiptRequest.swift in Sources */,
+				206F188C1DA2F16600E20C66 /* PickCellLocation.swift in Sources */,
+				20DDC2731D813409002CC46F /* PackOrderCell.swift in Sources */,
+				20B6131E1DAF6CC100BAFB7E /* FbReceiveTicket.swift in Sources */,
+				2076875F1DC9031F00677145 /* FbCustomFields.swift in Sources */,
+				20047BC11D9B7FE800716383 /* PartDescriptionCell.swift in Sources */,
+				208879011E249A5100D62F42 /* ScannableLocationCell.swift in Sources */,
+				2078FA0A1D8171C30099565F /* DeliveryVewController.swift in Sources */,
+				205FD84B1DE41BD600E35168 /* WorkOrderDetailCell.swift in Sources */,
+				206BC7BF1DB87C5B00ED05AC /* FbTrackingItem.swift in Sources */,
+				20C206411D77DBA7003E1FF4 /* ScannerViewController.swift in Sources */,
+				206F18901DA2F1D200E20C66 /* PickCellTracking.swift in Sources */,
+				20E402641DC84A7D00841896 /* FbShipping.swift in Sources */,
+				20C206431D77E0CE003E1FF4 /* Protocols.swift in Sources */,
+				20D9E22C1D8E7CB000CC349E /* LocationCache.swift in Sources */,
+				20885EEC1D2F7B23008D05B8 /* ViewController.swift in Sources */,
+				20A5CE331D8BB33300CFA571 /* MoveRequest.swift in Sources */,
+				206DA3BD1E0996D000B2FF7C /* ReceivePartTrackTableViewController.swift in Sources */,
+				20FF8D661D7EA7BF003B785F /* WorkOrderCell.swift in Sources */,
+				20F275EC1D30551300B2B37E /* AboutViewController.swift in Sources */,
+				2052ACB91D2F813300A862C1 /* PickListRequest.swift in Sources */,
+				20A3E6791D9B90A800185B44 /* PartInventoryCell.swift in Sources */,
+				205FD8531DE432B300E35168 /* FbWorkOrderItems.swift in Sources */,
+				20C799401DD27B1A00EE5755 /* README.md in Sources */,
+				20A3E67D1D9BAEC700185B44 /* FbInventory.swift in Sources */,
+				20885EEA1D2F7B23008D05B8 /* AppDelegate.swift in Sources */,
+				208288A31DC3C5DF003AED5D /* FbSerialNumList.swift in Sources */,
+				20DB4CF51D9C84BF00213AF7 /* PickPartTableViewController.swift in Sources */,
+				2086461A1E3BCF0000F2B253 /* BigGoButton.swift in Sources */,
+				20B613241DB0351300BAFB7E /* FbReceivedReceipt.swift in Sources */,
+				20E9CD281D9513FA007B6AF1 /* FbShipment.swift in Sources */,
+				205FD8511DE42C0A00E35168 /* FbWorkOrder.swift in Sources */,
+				2041DB661D505D0900BC2733 /* PickOrderViewController.swift in Sources */,
+				2032E18C1D6EDA4500631E4E /* ShipListRequest.swift in Sources */,
+				20B7562B1E2F2BE500EAE6B0 /* FbLoginResponse.swift in Sources */,
+				201742531D950A7200A5B513 /* DeliverySignatureViewController.swift in Sources */,
+				201CD6F71DCA766E00998302 /* PackCellPart.swift in Sources */,
+				200A16341D755FD6006EAF5F /* ReceivingListRequest.swift in Sources */,
+				20178AFA1E2413E400694F73 /* SwiftCache.swift in Sources */,
+				205D43F91E033995005F9A4C /* FbReceiptItems.swift in Sources */,
+				20E913D71D767D1300EC1DB7 /* ModuleSettings.swift in Sources */,
+				2008F3181DDBAD1D00878542 /* PackCellTracking.swift in Sources */,
+				206AD70E1DB7639900442E60 /* FbShippingItem.swift in Sources */,
+				20C801001DCA431100628E01 /* PackPartTrackingTableViewController.swift in Sources */,
+				208288A71DC3C8EC003AED5D /* FbSerialBoxList.swift in Sources */,
+				20F734851E25510A00AA878F /* QuantityCell.swift in Sources */,
+				20CC52FC1D6519DA005D1276 /* FbUom.swift in Sources */,
+				20D869BA1D952B300017B7FA /* PartViewController.swift in Sources */,
+				200B7E3D1D97B526003FEE7A /* InventoryCell.swift in Sources */,
+				20FF8D621D7EA315003B785F /* WorkOrderRequest.swift in Sources */,
+				20692D4C1D69526900A6F218 /* PickItemViewController.swift in Sources */,
+				2018F87E1DE4E93400D87536 /* FbConsumeItems.swift in Sources */,
+				20213CC61DF889F8005A2C29 /* WorkOrderCellLocation.swift in Sources */,
+				208F9FA31DF5E0F000DED39C /* WorkOrderFinishTrackingTableViewController.swift in Sources */,
+				208302261D754D1D0003D3AD /* ReceiveOrderViewController.swift in Sources */,
+				20E87B861D30893A00DE2162 /* CompatibleRequest.swift in Sources */,
+				20CC52FE1D6521A3005D1276 /* FbUomConversion.swift in Sources */,
+				20270AB11DFB584A00FEF63F /* FbUserList.swift in Sources */,
+				206879A81E31F4BD00D4B325 /* DebugSocket.swift in Sources */,
+				208288A11DC3C3A5003AED5D /* FbSerialNum.swift in Sources */,
+				20216D1E1D9D105A00AD2F5B /* PartImageViewController.swift in Sources */,
+				2078FA0C1D8173DE0099565F /* DeliveryCell.swift in Sources */,
+				20B613221DAF830600BAFB7E /* FbReceiveItem.swift in Sources */,
+				20F275F01D30551300B2B37E /* PickViewController.swift in Sources */,
+				20B944401D7F8B5E00AC1079 /* ShipmentRequest.swift in Sources */,
+				2031353A1DBEC9E500935C16 /* FbDestinationTag.swift in Sources */,
+				206A76061D8938FC009E9E53 /* LocationTextField.swift in Sources */,
+				205E42F01D780FF800A284D8 /* Utils.swift in Sources */,
+				206F18861DA225FC00E20C66 /* FbPartTracking.swift in Sources */,
+				20E4026A1DC84D7800841896 /* FbCountry.swift in Sources */,
+				20A18C151DE4AE7800E7F82C /* FbUser.swift in Sources */,
+				20C1F2091E1575F1003E5817 /* PluginSettings.swift in Sources */,
+				2036D33D1DD642E80057AF9D /* FbShippingItems.swift in Sources */,
+				204C549C1F54AE39006AFF5B /* UnitCostCell.swift in Sources */,
+				2018F8801DE4EA6900D87536 /* FbConsumeItem.swift in Sources */,
+				208F9FA51DF6148E00DED39C /* SaveWorkOrderRequest.swift in Sources */,
+				20F275ED1D30551300B2B37E /* MainMenuViewController.swift in Sources */,
+				20E913D91D76910500EC1DB7 /* SettingsViewController.swift in Sources */,
+				20213CC81DF88AC9005A2C29 /* WorkOrderCellPart.swift in Sources */,
+				2052ACB01D2F80F600A862C1 /* ImageFromText.swift in Sources */,
+				200187971E25D53100B0886B /* SerialNumberAdderCell.swift in Sources */,
+				20F275EE1D30551300B2B37E /* PackViewController.swift in Sources */,
+				20E587121D8913E3009F25B5 /* LocationTableViewController.swift in Sources */,
+				20B613111DADFEB700BAFB7E /* FbPick.swift in Sources */,
+				20BC69261DECD8DC00CCAA14 /* FbUomConversions.swift in Sources */,
+				20BBE6831D6ED1DF00D03346 /* ShipViewController.swift in Sources */,
+				203135401DBF0C5100935C16 /* FbPartTrackingList.swift in Sources */,
+				20C4C1841D56E7D300DB6EBE /* UOMListRequest.swift in Sources */,
+				206AD7101DB7DC0200442E60 /* PackPartStandardTableViewController.swift in Sources */,
+				20D9E22A1D8E789C00CC349E /* ScannableTextField.swift in Sources */,
+				20A3E6771D9B908C00185B44 /* PartImageCell.swift in Sources */,
+				20CC53001D652B05005D1276 /* FbLocation.swift in Sources */,
+				208F9FA71DF6199D00DED39C /* FbDestLocation.swift in Sources */,
+				208F38111E2824A500CACF97 /* TrackingCell.swift in Sources */,
+				20213CC21DF8887A005A2C29 /* WorkOrderCellTracking.swift in Sources */,
+				2012BE931EAE56E400DCF960 /* ReceivePartTrackAllTableViewController.swift in Sources */,
+				20DDC2751D813F37002CC46F /* FbShipSearchItem.swift in Sources */,
+				206879A51E318B0400D4B325 /* RPMConsultingServices-acknowledgements.markdown in Sources */,
+				208879051E24A57300D62F42 /* ScannablePartCell.swift in Sources */,
+				20F275EF1D30551300B2B37E /* PickOrderCell.swift in Sources */,
+				20629EBF1E14257300962FC2 /* FbReceivedReceipts.swift in Sources */,
+				208288A51DC3C823003AED5D /* FbSerialBox.swift in Sources */,
+				20B613131DAE00FC00BAFB7E /* FbPickOrder.swift in Sources */,
+				20C801021DCA596100628E01 /* SerialNumberTableViewCell.swift in Sources */,
+				20874BA61DA8C54700A36767 /* PickCellTrackSerial.swift in Sources */,
+				20270AB31DFB5BFB00FEF63F /* FbLocationList.swift in Sources */,
+				205FD84D1DE41CBC00E35168 /* WorkOrderDetailViewController.swift in Sources */,
+				203135381DBEC5CB00935C16 /* FbTag.swift in Sources */,
+				207D13471DF72AE10074BDE3 /* FbAvailablePickLocations.swift in Sources */,
+				201CD6F51DCA6F5900998302 /* PackCellSerial.swift in Sources */,
+				20213CC41DF88976005A2C29 /* WorkOrderCellQuantity.swift in Sources */,
+				20E922FE1D86736300803EC3 /* SavePickRequest.swift in Sources */,
+				208879081E24A75200D62F42 /* MoveInventoryTableViewController.swift in Sources */,
+				20270AB51DFB5CC600FEF63F /* FbLocationGroupList.swift in Sources */,
+				2064C64F1DB6E74D00C246F0 /* PackOrderTableViewController.swift in Sources */,
+				20692D5A1D6C18F900A6F218 /* FbPart.swift in Sources */,
+				201160821D545CF40066028B /* Compatibility.swift in Sources */,
+				2052ACAE1D2F80F600A862C1 /* Connection.swift in Sources */,
+				20E402661DC84C7700841896 /* FbCartons.swift in Sources */,
+				20313D531E2DE6F400734A09 /* CycleInventoryTableViewController.swift in Sources */,
+				20A3E67B1D9BA7AE00185B44 /* FbInventoryQuantity.swift in Sources */,
+				200B7E391D97856C003FEE7A /* SaveUpcRequest.swift in Sources */,
+				2079C7A01DB60A29007E271D /* PrintReportRequest.swift in Sources */,
+				20C57EC31D9E0847000B37F8 /* SaveImageRequest.swift in Sources */,
+				20FF8D641D7EA3FA003B785F /* WorkOrderViewController.swift in Sources */,
+				208302221D75491D0003D3AD /* ReceiveViewController.swift in Sources */,
+				2041DB641D505B7000BC2733 /* PickRequest.swift in Sources */,
+				2097C20D1E43EB6300E23FC8 /* ButtonGrid.swift in Sources */,
+				20B6131A1DAF676600BAFB7E /* ReceiveOrderPartCell.swift in Sources */,
+				2056C2AF1D5D47330005AF2B /* FbCarrier.swift in Sources */,
+				20A5CE351D8E665900CFA571 /* CycleCountRequest.swift in Sources */,
+				202E420E1D305DE200E6AA46 /* Constant.swift in Sources */,
+				206AD70C1DB7606C00442E60 /* FbCarton.swift in Sources */,
+				2031353C1DBEE98200935C16 /* FbPickItems.swift in Sources */,
+				20B613201DAF816100BAFB7E /* FbReceipt.swift in Sources */,
+				204C54931F54A18E006AFF5B /* AddInventoryRequest.swift in Sources */,
+				203D9FF11D53041000662D8F /* PluginDataRequest.swift in Sources */,
+				20DBB4621D5300CA00424FAA /* PickItemCell.swift in Sources */,
+				200B7E3B1D97A27D003FEE7A /* InventoryQuantityRequest.swift in Sources */,
+				2052ACB81D2F813300A862C1 /* FBStatus.swift in Sources */,
+				20DDC2791D8162C1002CC46F /* FbWorkOrderItem.swift in Sources */,
+				20FF8D5E1D7E965D003B785F /* LoginRequest.swift in Sources */,
+				20A3E6751D9B906B00185B44 /* PartUpcCell.swift in Sources */,
+				206F188E1DA2F19A00E20C66 /* PickCellQuantity.swift in Sources */,
+				20A5064A1E367069007D3A0F /* AsyncSocket.swift in Sources */,
+				204C54961F54A7EC006AFF5B /* NoteCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		204C548F1F50BC89006AFF5B /* AddInventory.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				204C54901F50BC89006AFF5B /* Base */,
+			);
+			name = AddInventory.storyboard;
+			sourceTree = "<group>";
+		};
+		20885EED1D2F7B23008D05B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20885EEE1D2F7B23008D05B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20885EF51D2F7B23008D05B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20885EF61D2F7B23008D05B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		209BF2651E1F419B00D7A414 /* Acknowledgements.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209BF2661E1F419B00D7A414 /* Base */,
+			);
+			name = Acknowledgements.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20885EF91D2F7B23008D05B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ExpressTech International LLC (SX2W8LUEW8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ExpressTech International LLC (SX2W8LUEW8)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = SX2W8LUEW8;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "daf33dbe-b52a-4f51-afe4-a1df71a79a48";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20885EFA1D2F7B23008D05B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ExpressTech International LLC (SX2W8LUEW8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ExpressTech International LLC (SX2W8LUEW8)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SX2W8LUEW8;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "daf33dbe-b52a-4f51-afe4-a1df71a79a48";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20885EFC1D2F7B23008D05B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B87201C5FBBCDDB2EA51046 /* Pods-Fishbowl GO.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Fishbowl GO/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"DEBUG\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fishbowl.FishbowlGOiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20885EFD1D2F7B23008D05B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57465B34BB46078331786D1B /* Pods-Fishbowl GO.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Fishbowl GO/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fishbowl.FishbowlGOiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20885EE11D2F7B23008D05B8 /* Build configuration list for PBXProject "Fishbowl GO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20885EF91D2F7B23008D05B8 /* Debug */,
+				20885EFA1D2F7B23008D05B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20885EFB1D2F7B23008D05B8 /* Build configuration list for PBXNativeTarget "Fishbowl GO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20885EFC1D2F7B23008D05B8 /* Debug */,
+				20885EFD1D2F7B23008D05B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		20885EF01D2F7B23008D05B8 /* Fishbowl_GO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				20885EF11D2F7B23008D05B8 /* Fishbowl_GO.xcdatamodel */,
+			);
+			currentVersion = 20885EF11D2F7B23008D05B8 /* Fishbowl_GO.xcdatamodel */;
+			path = Fishbowl_GO.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 20885EDE1D2F7B23008D05B8 /* Project object */;
+}

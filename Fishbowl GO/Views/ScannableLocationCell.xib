@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ScannableLocationCell" id="KGk-i7-Jjw" customClass="ScannableLocationCell" customModule="Fishbowl_GO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPi-zo-TDb" customClass="LockButton" customModule="Fishbowl_GO" customModuleProvider="target">
+                        <rect key="frame" x="6" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="4Oo-1K-O2u"/>
+                            <constraint firstAttribute="width" constant="20" id="WHf-XK-wDT"/>
+                        </constraints>
+                        <state key="normal" title="Lock Button" image="unlocked-20"/>
+                        <connections>
+                            <action selector="toggleLock:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VS9-Sz-trt"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="location" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LEB-qx-Ilc" customClass="LocationTextField" customModule="Fishbowl_GO" customModuleProvider="target">
+                        <rect key="frame" x="32" y="7" width="247" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="0nq-1g-XQ8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                    </textField>
+                    <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsR-Pq-BHW">
+                        <rect key="frame" x="331" y="3" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="asp-99-DDc"/>
+                            <constraint firstAttribute="width" constant="36" id="uKS-T0-0jV"/>
+                        </constraints>
+                        <state key="normal" image="chevron-right-small"/>
+                        <connections>
+                            <action selector="btnLocationChooser:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cNN-P2-R6h"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2G-oD-9D6">
+                        <rect key="frame" x="287" y="3" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="8wp-6O-dPl"/>
+                            <constraint firstAttribute="width" constant="36" id="E4R-mR-NO5"/>
+                        </constraints>
+                        <state key="normal" image="barcode-36x36-thin"/>
+                        <connections>
+                            <action selector="btnScan:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2fa-tP-Ns1"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jsR-Pq-BHW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2LO-HG-AWJ"/>
+                    <constraint firstItem="WPi-zo-TDb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7uk-Qy-ruk"/>
+                    <constraint firstItem="LEB-qx-Ilc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="P5F-XR-Iqg"/>
+                    <constraint firstItem="jsR-Pq-BHW" firstAttribute="leading" secondItem="n2G-oD-9D6" secondAttribute="trailing" constant="8" id="WqZ-s9-DiP"/>
+                    <constraint firstItem="LEB-qx-Ilc" firstAttribute="leading" secondItem="WPi-zo-TDb" secondAttribute="trailing" constant="6" id="YbJ-M3-yJg"/>
+                    <constraint firstItem="n2G-oD-9D6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="g7a-GI-IWz"/>
+                    <constraint firstAttribute="trailing" secondItem="jsR-Pq-BHW" secondAttribute="trailing" constant="8" id="orJ-Bc-UKl"/>
+                    <constraint firstItem="WPi-zo-TDb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="sjJ-YN-yRg"/>
+                    <constraint firstItem="n2G-oD-9D6" firstAttribute="leading" secondItem="LEB-qx-Ilc" secondAttribute="trailing" constant="8" id="vrC-kq-Y8l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnLocationChooser" destination="jsR-Pq-BHW" id="QuR-cj-3qj"/>
+                <outlet property="btnLock" destination="WPi-zo-TDb" id="XfU-oX-efN"/>
+                <outlet property="btnScan" destination="n2G-oD-9D6" id="fpn-Xb-Clu"/>
+                <outlet property="location" destination="LEB-qx-Ilc" id="WAm-xq-sBN"/>
+            </connections>
+            <point key="canvasLocation" x="63.5" y="52"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="barcode-36x36-thin" width="36" height="36"/>
+        <image name="chevron-right-small" width="218" height="218"/>
+        <image name="unlocked-20" width="20" height="20"/>
+    </resources>
+</document>

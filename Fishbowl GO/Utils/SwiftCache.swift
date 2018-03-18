@@ -1,0 +1,96 @@
+//
+//  SwiftCache.swift
+//  http://github.com/bih/SwiftCache
+//
+//  Created by Bilawal Hameed on 28/04/2015.
+//  Copyright (c) 2015 Bilawal Hameed. All rights reserved.
+//
+
+import UIKit
+import Foundation
+import SwiftyJSON
+
+
+class SwiftCache {
+    var name : String
+    var altName : String
+    var expiresIn : Int
+    var data : AnyObject
+    var respond : (AnyObject) -> Void
+    
+    init(name : String, expiresIn: Int) {
+        self.name = name
+        self.altName = "\(name)-expires"
+        self.expiresIn = expiresIn
+        self.data = [[String: AnyObject]]()
+        self.respond = { objectData in }
+    }
+    
+    init(name : String) {
+        self.name = name
+        self.altName = "\(name)-expires"
+        self.expiresIn = 60
+        self.data = [[String: AnyObject]]()
+        self.respond = { objectData in }
+    }
+    
+    func request(callback: () -> Void) -> SwiftCache {
+        if isCached() {
+            self.respond(gets())
+        } else {
+            callback()
+        }
+        
+        return self
+    }
+    
+    func respond(callback: (AnyObject) -> Void) -> SwiftCache {
+        self.respond = callback
+        return self
+    }
+    
+    func expireCache() {
+        NSUserDefaults().removeObjectForKey(self.altName)
+        NSUserDefaults().removeObjectForKey(self.name)
+    }
+    
+    private func gets() -> AnyObject {
+        return NSUserDefaults().objectForKey(self.name)!
+    }
+    
+    func saveToCache(json: [JSON]) -> SwiftCache {
+        var convertedToObj = [[String : AnyObject]]()
+        
+        for obj in json {
+            convertedToObj.append(obj.dictionaryObject!)
+        }
+        
+        return saveToCache(convertedToObj)
+    }
+    
+    func saveToCache(data: AnyObject) -> SwiftCache {
+        self.data = data
+        self.respond(data)
+        
+        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        dispatch_async(dispatch_get_global_queue(priority, 0)) {
+            NSUserDefaults().setObject(Int(NSDate().timeIntervalSince1970) + self.expiresIn, forKey: self.altName)
+            NSUserDefaults().setObject(data, forKey: self.name)
+        }
+        
+        return self
+    }
+    
+    func secondsLeftInCache() -> Int {
+        if let cachedUntil: Int = NSUserDefaults().integerForKey(self.altName) {
+            let timeLeft = cachedUntil - Int(NSDate().timeIntervalSince1970)
+            return (timeLeft >= 0) ? timeLeft : 1
+        } else {
+            return -1
+        }
+    }
+    
+    func isCached() -> Bool {
+        return secondsLeftInCache() > 0
+    }
+}
